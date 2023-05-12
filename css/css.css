@@ -55,6 +55,11 @@ span {
     }
 }
 
+
+.home .my-pic {
+    display: inline-block;
+}
+
 /* H E A D E R */
 
 .flish {
@@ -97,12 +102,13 @@ span {
     color: white;
     width: 500px;
     margin: 20px 0px 0px 50px;
-    text-align: center;
+    text-align: left;
 }
 
 .home ul {
-    margin: 200px 0px 0px 150px;
     position: fixed;
+    right: 2%;
+    top: 30%;
 }
 
 
@@ -149,7 +155,10 @@ span {
 /* A B O U T */
 
 .about {
-    margin: 300px 100px 50px 100px;
+    margin-top: 300px;
+    margin-bottom: 40px;
+    text-align: center;
+
 } 
 
 
@@ -276,7 +285,9 @@ span {
 /* P O R T F O L I O */
 
 .projects {
-    margin: 100px 100px;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    text-align: center;
 }
 .projects .portfolio-title {
     color: white;
@@ -344,7 +355,9 @@ span {
 /* C O N T A C T */
 
 .contact {
-    margin: 150px 100px;
+    margin-top: 150px;
+    margin-bottom: 150px;
+    text-align: center;
 }
 
 .contact h1 {
@@ -357,11 +370,13 @@ span {
     color: white;
     text-transform: uppercase;
     margin-bottom: 30px;
+    text-align: left;
 }
 
  .contact p {
     color: white;
     margin-bottom: 20px;
+    text-align: center;
 }
 
 .contact .contact-infos {
@@ -391,26 +406,30 @@ span {
     right: 52%;
 }
 
-.contact .inputs input{
+.contact .inputs input {
     border: none;
     border-radius: 30px;
     background-color: #2a2e35;
     color: #FFFFFF;
     margin-bottom: 20px;
-    padding: 8px;
 }
 
 .contact .name {
     margin-right: 10px;
+    padding: 8px;
+}
+
+.contact .mail {
+    padding: 8px;
 }
 
 .contact .subject {
     width: 500px;
+    padding: 8px;
 }
 
 .contact .message {
-    width: 500px;
-    height: 250px;
+    padding: 15px 255px 200px 15px;
 }
 
 .contact .inputs button {
@@ -418,8 +437,9 @@ span {
     border-radius: 5px;
     background-color: var(--color);
     padding: 7px 15px;
-    margin-left: 10px;
     transition: 1s linear;
+    position: relative;
+    left: -37%;
 }
 
 .contact .inputs a {
@@ -471,18 +491,8 @@ span {
 
 
 @media (min-width :780px) {
-    .about::before {
-        content: "";
-        position: absolute;
-        height: 1px;
-        width: 40%;
-        background-color: var(--color);
-        bottom: -104%;
-        left: 30%;
-    }
-
     .projects .last {
-        margin-left: 390px;
+        margin-left: 395px;
     }
 
 }
@@ -493,7 +503,7 @@ span {
     }
 
     .flish {
-        height: 37vh;
+        height: 36vh;
         margin-top: 0px;
         transform: skew(46deg, 0deg);
         width: 294px;
@@ -570,6 +580,11 @@ span {
         right: 5%;
         font-size: 15px;
     }
+
+    .contact .name , .contact .mail {
+        padding: 8px 115px 8px 8px;
+    }
+
     .contact .subject , .contact .message {
         width: 350px;
     }
