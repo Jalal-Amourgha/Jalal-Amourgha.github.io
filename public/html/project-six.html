@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/projects.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
+    <link rel="icon" href="../images/logo.png">
+    <title>Project Six</title>
+</head>
+<body>
+    <header>
+        <a href="../../index.html "><img src="../images/main-logo.png" alt="logo"></a>
+        <ul class="general">
+            <li class="links"><a href="../../index.html #home">Home</a></li>
+            <li class="links"><a href="../../index.html #about">About</a></li>
+            <li class="links"><a href="../../index.html #services">Services</a></li>
+            <li class="links"><a href="../../index.html #projects">Projects</a></li>
+            <li class="links"><a class="unique" href="../../index.html #contact">Contact</a></li>
+        </ul>
+        <button class="btn download"><a href="../cv!.pdf" download="Cv!" target="_blank">download cv</a></button>
+        <i class="fa-solid fa-bars menu" onclick="menutoggle()"></i>
+        <ul id="menuitems" class="for-phone">
+            <li class="margin-top" ><a href="../../index.html">Home</a></li>
+            <li><a href="../../index.html #about">About</a></li>
+            <li><a href="../../index.html #services">Services</a></li>
+            <li><a href="../../index.html #projects">Projects</a></li>
+            <li><a href="../../index.html #contact">Contact</a></li>
+            <li class="margin-bottom"><a class="download-phone" href="../cv!.pdf" download="Cv!" target="_blank">download cv</a></li>
+        </ul>
+    </header>
+    <div class="project-page">
+        <div class="cotainer">
+            <div class="boxs">
+                <div class="images">
+                    <div class="swiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide"><img src="../images/project-six.PNG" alt="project-01"></div>
+                            <div class="swiper-slide"><img src="../images/project-six 2.PNG" alt="project-01"></div>
+                            <div class="swiper-slide"><img src="../images/project-six 3.PNG" alt="project-01"></div>
+                            <div class="swiper-slide"><img src="../images/project-six 4.PNG" alt="project-01"></div>
+                        </div>
+                        <div class="swiper-pagination"></div>
+                            <div class="swiper-button-prev"></div>
+                            <div class="swiper-button-next"></div>
+                        </div>
+                    </div>
+                    <div class="project-infos">
+                        <h1>information about the <span>project</span>.</h1>
+                        <p><span>Name of the Project :</span>  Tin Dog</p>
+                        <p>Created in 30 April 2023</p>
+                        <p><span>Source Code :</span>  <a href="https://github.com/Jalal-Amourgha/tingdog" target="_blank">https://github.com/Jalal-Amourgha/TinDog</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <h4 class="copy">&copy; Created By <span>Jalal Amourgha</span> - 2023</h4>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script>
+        const swiper = new Swiper('.swiper', {
+            loop: true,
+
+            pagination: {
+                el: '.swiper-pagination',
+            },
+
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+        });
+    </script>
+    <script>
+        var menuitems = document.getElementById("menuitems");
+        menuitems.style.maxHeight = "0px";
+        function menutoggle() {
+            if(menuitems.style.maxHeight == "0px")
+                {
+                menuitems.style.maxHeight = "300px";
+                }
+                else
+                    {
+                        menuitems.style.maxHeight = "0px";
+                    }
+        }
+    </script>
+    <script type="text/javascript">
+        window.addEventListener("scroll", function(){
+            var header = document.querySelector("header");
+            header.classList.toggle("sticky", window.scrollY > 0);
+        })
+    </script>
+    <script src="https://kit.fontawesome.com/97220a04d8.js" crossorigin="anonymous"></script>
+</body>
+</html>
