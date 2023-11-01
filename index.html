@@ -1,289 +1,370 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./public/css/style.css">
-    <link rel="icon" href="./public/images/logo.png">
-    <title>Jalal Amourgha</title>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="src/css/all.min.css" />
+  <link rel="stylesheet" href="src/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="src/css/style.css" />
+  <link rel="icon" href="./src/images/logo.png" />
+  <title>Jalal Amourgha</title>
 </head>
+
 <body>
-    <header>
-        <a href="#home"><img src="./public/images/main-logo.png" alt="logo"></a>
-        <ul class="general">
-            <li class="links"><a href="#home">Home</a></li>
-            <li class="links"><a href="#about">About</a></li>
-            <li class="links"><a href="#services">Services</a></li>
-            <li class="links"><a href="#projects">Projects</a></li>
-            <li class="links"><a class="unique" href="#contact">Contact</a></li>
+  <nav class="navbar navbar-expand-lg sticky-top">
+    <div class="container" id="home">
+      <a class="navbar-brand fs-5" href="#">
+        <h3 class="main" data-text="< Jalal />">
+          < Jalal />
+        </h3>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0 fs-5">
+          <li><a href="#home" class="link active">Home</a></li>
+          <li><a href="#about" class="link">About</a></li>
+          <li><a href="#services" class="link">Services</a></li>
+          <li><a href="#projects" class="link">Projects</a></li>
+          <li><a href="#contact" class="link">Contact</a></li>
         </ul>
-        <button class="btn download"><a href="./public/cv!.pdf" download="Cv!" target="_blank">download cv</a></button>
-        <i class="fa-solid fa-bars menu" onclick="menutoggle()"></i>
-        <ul id="menuitems" class="for-phone">
-            <li class="margin-top" ><a href="#home">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#services">Services</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact">Contact</a></li>
-            <li class="margin-bottom"><a class="download-phone" href="./public/cv!.pdf" download="Cv!" target="_blank">download cv</a></li>
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0 fs-5">
+          <li>
+            <i class="fa-solid fa-moon" id="changeModeBtn" onclick="changeMode()"></i>
+          </li>
+          <li>
+            <i class="fa-solid fa-palette switcher" onclick="switcherBox()"></i>
+          </li>
         </ul>
-    </header>
-    <section id="home">
-        <div class="home">
-            <div class="container">
-                <div class="boxs">
-                    <div class="infos">
-                        <h3 class="unique">Hello, I'm</h3>
-                        <h1><span class="my-name">Jalal Amourgha</span></h1>
-                        <h3>I'm web Developer Student</h3>
-                        <p>i love to create beautiful and functional websites.</p>
-                        <ul>
-                            <a href="https://web.facebook.com/amour.gha12/" target="_blank"><i class="fa-brands fa-facebook"></i></a>
-                            <a href="https://www.instagram.com/amr___jalal/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
-                            <a href="https://twitter.com/Amr_Jalal22" target="_blank"><i class="fa-brands fa-twitter"></i></a>
-                            <a href="https://github.com/Jalal-Amourgha" target="_blank"><i class="fa-brands fa-github unique"></i></a>
-                        </ul><br>
-                        <button class="btn"><a href="#about">About me</a></button>
-                    </div>
-                    <div class="image-box">
-                        <div class="bubbles">
-                            <span style="--i:11"></span>
-                            <span style="--i:12"></span>
-                            <span style="--i:16"></span>
-                        </div>        
-                        <img class="main" src="./public/images/my image.jpg" alt="my picture">
-                        <img class="phone"  src="./public/images/my image for phone.png" alt="photo">
-                        <div class="bubbles-two other">
-                            <span style="--i:14"></span>
-                            <span style="--i:18"></span>
-                            <span style="--i:17"></span>
-                        </div>  
-                    </div>
-                </div>
-            <div>
+        <div class="colors-box">
+          <div class="color-switcher">
+            <button class="btn col1 active" data-color="#ff0026"></button>
+            <button class="btn col2" data-color="#0174BE"></button>
+            <button class="btn col3" data-color="#52b788 "></button>
+            <button class="btn col4" data-color="#940B92"></button>
+          </div>
         </div>
+      </div>
     </div>
-    </section>
-    <section id="about">
-        <div class="about">
-            <h1 class="title">about <span>me</span></h1>
-            <div class="container">
-                <div class="boxs">
-                    <div class="about-infos">
-                        <h3>Information about <span>me</span></h3>
-                        <p>My name is jalal amourgha , i'm 19 years old boy from Morocco, i got a baccalaureate in sciences physics-chimie in 2021.
-                            i went to the university than i decided to leave it and starting leaning programming  (at home) since 1 october 2022,
-                            i also decided to learn German (at home). 
-                            My goal is to be a great font-end developper and working with the biggest companies in the world. <br>
-                            I also can speak four different languages: Arabic (mother tongue) , English , German and French.
-                        </p>
-                    </div>
-                    <div>
-                        <div class="progress-bars">
-                            <div class="progress-bar">
-                                <h5>html</h5>
-                                <div class="progress-con">
-                                    <p>90%</p>
-                                    <div class="progress">
-                                        <span class="html"></span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="progress-bar">
-                                <h5>css</h5>
-                                <div class="progress-con">
-                                    <p>70%</p>
-                                    <div class="progress">
-                                        <span class="css"></span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="progress-bar">
-                                <h5>js</h5>
-                                <div class="progress-con">
-                                    <p>35%</p>
-                                    <div class="progress">
-                                        <span class="js"></span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="progress-bar">
-                                <h5>Python</h5>
-                                <div class="progress-con">
-                                    <p>25%</p>
-                                    <div class="progress">
-                                        <span class="python"></span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+  </nav>
+  <section class="home" id="home">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6 col-md-12 col-sm-12 mt-5 first">
+          <h1>Hi,</h1>
+          <h1>I'm <span class="my-name"></span></h1>
+          <p class="fs-5">
+            I'm creative Frontend develloper, i'm very passionate and
+            dedicated to my work.
+          </p>
+          <ul class="list-unstyled d-flex">
+            <li class="me-4 fs-3">
+              <a href="https://www.instagram.com/amr___jalal/" target="_blank"><i
+                  class="fa-brands fa-instagram"></i></a>
+            </li>
+            <li class="me-4 fs-3">
+              <a href="https://twitter.com/Amr_Jalal22" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
+            </li>
+            <li class="me-4 fs-3">
+              <a href="https://www.linkedin.com/in/jalal-amourgha-870493286/" target="_blank"><i
+                  class="fa-brands fa-linkedin-in"></i></a>
+            </li>
+            <li class="me-4 fs-3">
+              <a href="https://github.com/Jalal-Amourgha" target="_blank"><i class="fa-brands fa-github"></i></a>
+            </li>
+          </ul>
+          <a class="btn" href="./src/cv.pdf" target="_blank">Download CV</a>
+        </div>
+        <div class="col-lg-6 col-md-12 col-sm-12">
+          <div class="img-border text-center">
+            <img src="src/images/main.png" alt="my image" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section class="about mt-5 mb-5" id="about">
+    <div class="container">
+      <div class="text-center text-uppercase mt-5 mb-5">
+        <h1>About <span>me</span></h1>
+      </div>
+      <div class="row">
+        <div class="col-lg-6 col-md-6 col-sm-12">
+          <h4 class="text-uppercase">information about <span>me</span></h4>
+          <p class="lh-lg">
+            Hi, my name is Jalal Amourgha, and I'm incredibly passionate about web development. Currently, I'm on an
+            exciting journey of mastering React JS and other cutting-edge technologies. My journey in the world of
+            programming began with the invaluable knowledge I gained through Harvard cs50. With an ever-growing arsenal
+            of projects under my belt, I'm constantly exploring the endless possibilities of the web, creating
+            innovative and user-friendly solutions. I'm dedicated to crafting remarkable digital experiences and am
+            always eager to take on new challenges.
+          </p>
+          <p class="lh-lg">
+            I have delved into a multitude of programming languages, such as JavaScript,
+            HTML, CSS, and more... Through diverse projects, I gained a huge
+            experience in the world of UI and proficiency in frameworks like
+            Bootstrap.
+          </p>
+        </div>
+        <div class="col-lg-6 col-md-6 col-sm-12">
+          <h4 class="text-uppercase">Languages <span>&</span> frameworks</h4>
+          <div class="progress-bars">
+            <div class="progress-bar">
+              <div>
+                <i class="fa-brands fa-html5"></i>
+              </div>
+              <div class="progress">
+                <span class="html">90%</span>
+              </div>
+            </div>
+            <div class="progress-bar">
+              <div>
+                <i class="fa-brands fa-css3-alt"></i>
+              </div>
+              <div class="progress">
+                <span class="css">90%</span>
+              </div>
+            </div>
+            <div class="progress-bar">
+              <div>
+                <i class="fa-brands fa-bootstrap"></i>
+              </div>
+              <div class="progress">
+                <span class="bootstrap">90%</span>
+              </div>
+            </div>
+            <div class="progress-bar">
+              <div>
+                <i class="fa-brands fa-square-js"></i>
+              </div>
+              <div class="progress">
+                <span class="js">80%</span>
+              </div>
+            </div>
+          </div>
+        </div>
+  </section>
+
+  <!-- Services Section -->
+  <section class="services mt-5 mb-5" id="services">
+    <div class="container">
+      <div class="text-center text-uppercase pt-5 pb-5">
+        <h1>my <span>services</span></h1>
+      </div>
+      <div class="row">
+        <div class="col-lg-4 col-md-6 col-sm-12 mb-3">
+          <div class="box text-center pt-2 pb-2">
+            <div class="box-icon">
+              <i class="fa-solid fa-desktop fs-1"></i>
+            </div>
+            <h4 class="pt-3 pb-3 text-uppercase">UI & UX</h4>
+            <p>I can create an awesome websites with a wonderful quality.</p>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 col-sm-12 mb-3">
+          <div class="box text-center pt-2 pb-2">
+            <div class="box-icon">
+              <i class="fa-solid fa-mobile-screen-button fs-1"></i>
+            </div>
+            <h4 class="pt-3 pb-3 text-uppercase">responsive design</h4>
+            <p>I can create a fully responsive website with all mobile devices.</p>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 col-sm-12 mb-3">
+          <div class="box text-center pt-2 pb-2">
+            <div class="box-icon">
+              <i class="fa-brands fa-square-js fs-1"></i>
+            </div>
+            <h4 class="pt-3 pb-3 text-uppercase">JavaScript apps</h4>
+            <p>I can Create JavaScript Apps, games, apis ...</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section class="projects mt-5 mb-5" id="projects">
+    <div class="container">
+      <div class="text-center text-uppercase pt-5 pb-5">
+        <h1>my <span>projects</span></h1>
+      </div>
+      <div class="buttons text-center mt-3 mb-5">
+        <a class="active" data-filter=".all">All</a>
+        <a data-filter=".web">WebSites</a>
+        <a data-filter=".games">Games</a>
+      </div>
+      <div class="row">
+        <div class="col-lg-4 col-md-6 col-sm-12 mb-3 all games">
+          <div class="card">
+            <img src="src/images/project 1.PNG" alt="Guess The Flag" />
+            <div class="card-body z-3 overflow-hidden bg-white">
+              <div class="d-flex justify-content-between">
+                <h4 class="card-title">Guess The Flag</h4>
+                <div>
+                  <a href="https://guess-the-flag-rvfc.onrender.com" target="_blank" class="fs-4 me-2"><i
+                      class="fa-solid fa-link"></i></a>
+                  <a href="https://github.com/Jalal-Amourgha/Guess_The_Flag" target="_blank" class="fs-4"><i
+                      class="fa-brands fa-github"></i></a>
                 </div>
+              </div>
             </div>
+          </div>
         </div>
-    </section>
-    <section id="services">
-        <div class="services">
-            <h1 class="title">services</h1>
-            <div class="container">
-                <div class="boxs">
-                    <div class="box">
-                        <div class="icons"><i class="fa-solid fa-desktop"></i></div>        
-                        <h3>web development</h3>
-                        <p>I can create an amazing websites with a wonderful quality.</p>
-                    </div>
-                    <div class="box">
-                        <div class="icons"><i class="fa-solid fa-mobile-screen-button"></i>
-                        </div>
-                        <h3>responsive design</h3>
-                        <p>I can create a fully responsive website with multiple mobile devices.</p>
-                    </div>
-                    <div class="box">
-                        <div class="icons"><i class="fa-brands fa-square-js"></i>
-                        </div>
-                        <h3>java script apps</h3>
-                        <p>I'm new in java script but i can creat small apps.</p>
-                    </div>
+        <div class="col-lg-4 col-md-6 col-sm-12 mb-3 all web">
+          <div class="card">
+            <img src="src/images/project 7.PNG" alt="Movies Raiting" />
+            <div class="card-body z-3 overflow-hidden bg-white">
+              <div class="d-flex justify-content-between">
+                <h4 class="card-title">Movies Raiting</h4>
+                <div>
+                  <a href="https://movies-raiting.onrender.com/" target="_blank" class="fs-4 me-2"><i
+                      class="fa-solid fa-link"></i></a>
+                  <a href="https://github.com/Jalal-Amourgha/Movie_Raiting" target="_blank" class="fs-4 "><i
+                      class="fa-brands fa-github"></i></a>
                 </div>
+              </div>
             </div>
+          </div>
         </div>
-    </section>
-    <section id="projects">
-        <div class="projects">
-            <h1 class="title">Some of <span>my</span> projects</h1>
-            <div class="container">
-                <div class="boxs">
-                    <div class="box">
-                        <div class="image-box">
-                            <a href="./public/html/project-one.html" target="_blank"><img src="./public/images/project-one.PNG" alt="project-01"></a>  
-                        </div>
-                    
-                    </div>
-                    <div class="box">
-                        <div class="image-box">
-                            <a href="./public/html/project-two.html" target="_blank"><img src="./public/images/project-two.PNG" alt="project-02"></a>  
-                        </div>
-                    </div>
-                    <div class="box">
-                        <div class="image-box">
-                        <a href="./public/html/project-three.html" target="_blank"><img src="./public/images/project-three.PNG" alt="project-03"></a>    
-                        </div>
-                    </div>
-                    <div class="box">
-                        <div class="image-box">
-                            <a href="./public/html/project-four.html" target="_blank"><img src="./public/images/project-four.PNG" alt="project-04"></a> 
-                        </div>
-                    </div>
-                    <div class="box">
-                        <div class="image-box">
-                            <a href="./public/html/project-five.html" target="_blank"><img src="./public/images/project-five.PNG" alt="project-05"></a>  
-                        </div>
-                    </div>
-                    <div class="box">
-                        <div class="image-box">
-                            <a href="./public/html/project-six.html" target="_blank"><img src="./public/images/project-six.PNG" alt="project-06"></a>
-                        </div>
-                    </div>
-            </div>
-        </div>
-    </section>
-    <section id="contact">
-        <div class="contact">
-            <h1 class="title">contact <span>me</span></h1>
-            <div class="container">
-                <div class="boxs">
-                    <div>
-                        <h3>contact <span>me</span> here</h3>
-                        <p class="p-title">Fell free to dm <span>me</span> when ever you want.</p>
-                        <div class="contact-info">
-                            <i class="fa-solid fa-location-dot"></i>
-                            <h5>Location :</h6>
-                            <p>Tetouan, Morocco</p>
-                        </div>
-                        <div class="contact-info">
-                            <i class="fa-solid fa-envelope"></i>
-                            <h5>Emai :</h6>
-                            <p>jalalamourgha.mail@gmail.com</p>  
-                        </div>
-                        <div class="contact-info">
-                            <i class="fa-solid fa-user-graduate"></i>
-                            <h5>Education :</h6>
-                            <p>Abdelmalek Essaadi University</p>
-                        </div >
-                        <div class="contact-info">
-                            <i class="fa-solid fa-phone"></i>
-                            <h5>Mobile Number :</h6>
-                            <p>+212668264635</p>
-                        </div>
-                        <div class="socials">
-                            <a href="https://web.facebook.com/amour.gha12/" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
-                            <a href="https://www.instagram.com/amr___jalal/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
-                            <a href="https://twitter.com/Amr_Jalal22" target="_blank"><i class="fa-brands fa-twitter"></i></a>
-                            <a href="https://github.com/Jalal-Amourgha" target="_blank""><i class="fa-brands fa-github"></i></a>
-                        </div>
-                    </div>
-                    <div class="contact-bar">
-                        <form action="https://formsubmit.co/2bb4b50d4b3676e79e3d46764fbce9e8" method="POST" >
-                            <input type="text" name="Name" placeholder="Your Name" required>
-                            <input type="email" name="Email" placeholder="Your Email" required>
-                            <textarea name="Message" id="" cols="30" rows="10" placeholder="Message Here ..." required></textarea> <br>
-                            <button type="submit">Send</button>
-                        </form>
-                    </div>
+        <div class="col-lg-4 col-md-6 col-sm-12 mb-3 all web">
+          <div class="card">
+            <img src="src/images/project 5.PNG" alt="One Piece" />
+            <div class="card-body z-3 overflow-hidden bg-white">
+              <div class="d-flex justify-content-between">
+                <h4 class="card-title">One Piece</h4>
+                <div>
+                  <a href="https://one-piece-template.onrender.com" target="_blank" class="fs-4 me-2"><i
+                      class="fa-solid fa-link"></i></a>
+                  <a href="https://github.com/Jalal-Amourgha/One-Piece" target="_blank" class="fs-4 "><i
+                      class="fa-brands fa-github"></i></a>
                 </div>
+              </div>
             </div>
+          </div>
         </div>
-    </section>
-    <h4 class="copy">&copy; Created By <span>Jalal Amourgha</span> - 2023</h4>
+        <div class="col-lg-4 col-md-6 col-sm-12 mb-3 all games">
+          <div class="card">
+            <img src="src/images/project 3.PNG" alt="Typing Game" />
+            <div class="card-body z-3 overflow-hidden bg-white">
+              <div class="d-flex justify-content-between">
+                <h4 class="card-title">Typing Speed Game</h4>
+                <div>
+                  <a href="https://typing-speed-game.onrender.com" target="_blank" class="fs-4 me-2"><i
+                      class="fa-solid fa-link"></i></a>
+                  <a href="https://github.com/Jalal-Amourgha/Typing_Speed_Game" target="_blank" class="fs-4 "><i
+                      class="fa-brands fa-github"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 col-sm-12 mb-3 all web">
+          <div class="card">
+            <img src="src/images/project 2.PNG" alt="Visit Morocco" />
+            <div class="card-body z-3 overflow-hidden bg-white">
+              <div class="d-flex justify-content-between">
+                <h4 class="card-title">Visit Morocco</h4>
+                <div>
+                  <a href="https://visit-morocco.onrender.com/" target="_blank" class="fs-4 me-2"><i
+                      class="fa-solid fa-link"></i></a>
+                  <a href="https://github.com/Jalal-Amourgha/Visit_Morocco" target="_blank" class="fs-4 "><i
+                      class="fa-brands fa-github"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 col-sm-12 mb-3 all games">
+          <div class="card">
+            <img src="src/images/project 4.PNG" alt="Memory Game" />
+            <div class="card-body z-3 overflow-hidden bg-white">
+              <div class="d-flex justify-content-between">
+                <h4 class="card-title">Memory Game</h4>
+                <div>
+                  <a href="https://memory-game-5w0u.onrender.com" target="_blank" class="fs-4 me-2"><i
+                      class="fa-solid fa-link"></i></a>
+                  <a href="https://github.com/Jalal-Amourgha/Memory_Game" target="_blank" class="fs-4 "><i
+                      class="fa-brands fa-github"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 col-sm-12 mb-3 all web">
+          <div class="card">
+            <img src="src/images/project 6.PNG" alt="Clothes Shop" />
+            <div class="card-body z-3 overflow-hidden bg-white">
+              <div class="d-flex justify-content-between">
+                <h4 class="card-title">Clothes Shop</h4>
+                <div>
+                  <a href="https://jalal-clothes.onrender.com" target="_blank" class="fs-4 me-2"><i
+                      class="fa-solid fa-link"></i></a>
+                  <a href="https://github.com/Jalal-Amourgha/Jalal-Clothes" target="_blank" class="fs-4 "><i
+                      class="fa-brands fa-github"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="contact mt-5 mb-5" id="contact">
+    <div class="container">
+      <div class="text-center pt-2 pb-2">
+        <h1 class="text-uppercase">contact <span>me</span></h1>
+      </div>
+      <div class="contact-wallpaper">
+        <div class="row">
+          <div class="col-lg-6 col-md-8 col-sm-12 contact-box">
+            <h4 class="mb-5">Fell Free To Dm <span>Me</span> When Ever You Want</h4>
+            <form action="https://formsubmit.co/2bb4b50d4b3676e79e3d46764fbce9e8" method="POST">
+              <input type="text" name="Name" placeholder="Your Name" class="rounded-pill" required><br>
+              <input type="email" name="Email" placeholder="Your Email" class="rounded-pill" required><br>
+              <textarea name="Message" rows="5" placeholder="Your Message ..." class="rounded" required></textarea> <br>
+              <button type="submit">Send</button>
+            </form>
+            <ul class="list-unstyled d-flex justify-content-between mt-4 mb-3">
+              <li class="fs-2">
+                <a href="https://www.instagram.com/amr___jalal/" target="_blank"><i
+                    class="fa-brands fa-instagram"></i></a>
+              </li>
+              <li class="fs-2">
+                <a href="https://twitter.com/Amr_Jalal22" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
+              </li>
+              <li class="fs-2">
+                <a href="https://www.linkedin.com/in/jalal-amourgha-870493286/" target="_blank"><i
+                    class="fa-brands fa-linkedin-in"></i></a>
+              </li>
+              <li class="fs-2">
+                <a href="https://github.com/Jalal-Amourgha" target="_blank"><i class="fa-brands fa-github"></i></a>
+              </li>
+              <!-- <li class="fs-2">
+                <a href="#" onclick="copied()"><i class="fa-solid fa-envelope"></i></a>
+              </li> -->
+            </ul>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- S C R O L L E R - B T N -->
+  <div id="scroller">
+    <button class="scroll-btn" onclick="scrollBack()"><i class="fa-solid fa-arrow-up"></i></button>
+  </div>
 </body>
+<script src="src/js/bootstrap.bundle.min.js"></script>
+<script src="src/js/main.js"></script>
 <script src="https://kit.fontawesome.com/97220a04d8.js" crossorigin="anonymous"></script>
-<script>
-    var menuitems = document.getElementById("menuitems");
-    menuitems.style.maxHeight = "0px";
-    function menutoggle() {
-        if(menuitems.style.maxHeight == "0px")
-            {
-            menuitems.style.maxHeight = "300px";
-            }
-            else
-                {
-                    menuitems.style.maxHeight = "0px";
-                }
-    }
-</script>
-<script type="text/javascript">
-    window.addEventListener("scroll", function(){
-        var header = document.querySelector("header");
-        header.classList.toggle("sticky", window.scrollY > 0);
-    })
-</script>
-<script>
-    const li=document.querySelectorAll(".links");
-    const sec=document.querySelectorAll("section");
 
-    function activeMenu(){
-        let len=sec.length;
-        while(--len && window.scrollY + 97 < sec[len].offsetTop){}
-        li.forEach(ltx => ltx.classList.remove("active"));
-        li[len].classList.add("active")
-    }
-    activeMenu();
-    window.addEventListener("scroll", activeMenu);
-</script>
-<script>
-    const text = document.querySelector(".my-name");
-
-    const textLoad = () => {
-        setTimeout(() => {
-            text.textContent = "Jalal Amourgha";
-        }, 0);
-        setTimeout(() => {
-            text.textContent = "A Web Developer";
-        }, 4000);
-    }
-
-    textLoad();
-    setInterval(textLoad, 8000);
-</script>
 </html>

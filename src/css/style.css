@@ -1,0 +1,510 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --bg-main: white;
+  --bg-second: black;
+  --main-color: #ff0026;
+}
+
+body {
+  background-color: var(--bg-main);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  color: var(--bg-second);
+}
+
+span,
+i {
+  color: var(--main-color);
+}
+
+/* Start - Navbar */
+
+.navbar {
+  background-color: var(--bg-main);
+  box-shadow: 0 1px 4px var(--main-color);
+}
+
+.main {
+  font-size: 25px;
+  width: fit-content;
+  margin: auto;
+  position: relative;
+}
+
+.main::before {
+  content: attr(data-text);
+  position: absolute;
+  top: 0;
+  left: 0;
+  -webkit-text-fill-color: var(--main-color);
+  transition: 0.5s;
+  width: 0;
+  overflow: hidden;
+  z-index: 10;
+}
+
+.main:hover::before {
+  width: 100%;
+}
+
+.navbar button {
+  border: 1px solid var(--main-color);
+}
+.navbar button:focus {
+  box-shadow: none;
+}
+
+.navbar a {
+  text-decoration: none;
+  margin-right: 15px;
+  color: var(--bg-second);
+}
+
+.navbar .active {
+  color: var(--main-color) !important;
+}
+
+.navbar i {
+  font-size: 23px;
+  color: var(--main-color);
+  cursor: pointer;
+  padding: 10px;
+}
+
+.navbar .colors-box {
+  position: absolute;
+  bottom: -80px;
+  right: 5%;
+  min-height: 60px;
+  background-color: var(--bg-main);
+  padding: 15px 20px;
+  border-radius: 5px;
+  box-shadow: 0 4px 10px var(--main-color);
+  display: none;
+}
+
+.colors-box .color-switcher {
+  display: flex;
+}
+
+.colors-box .color-switcher .btn {
+  display: inline-block;
+  height: 25px;
+  width: 25px;
+  outline: none;
+  border: none;
+  border-radius: 50%;
+  margin: 0 5px;
+  cursor: pointer;
+}
+
+.colors-box .color-switcher .active {
+  box-shadow: 0 0 0 2px var(--bg-second), 0 0 0 4px var(--main-color);
+}
+
+.colors-box .color-switcher .col1 {
+  background: #ff0026;
+}
+.colors-box .color-switcher .col2 {
+  background: #0174be;
+}
+.colors-box .color-switcher .col3 {
+  background: #52b788;
+}
+.colors-box .color-switcher .col4 {
+  background: #940b92;
+}
+
+/* End - Navbar */
+
+/* Start - Section Home */
+
+.home .row {
+  padding: 10% 0%;
+}
+
+.home span {
+  position: relative;
+  color: var(--main-color);
+}
+
+.home h1 {
+  position: relative;
+  margin: 5% 0%;
+}
+.home i {
+  color: var(--main-color);
+}
+.home i:hover {
+  animation: rotate-scale-up 0.8s linear;
+}
+
+.home .my-name:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: var(--bg-main);
+  border-left: 2px solid var(--main-color);
+  animation: animate 4s steps(14) infinite;
+}
+
+.home i {
+  color: var(--main-color);
+}
+.home .btn {
+  background: none;
+  border: 1px solid var(--main-color);
+  border-radius: 50px;
+  font-size: 20px;
+  color: var(--main-color);
+  padding: 8px 20px;
+  margin: 10px 0px;
+  cursor: pointer;
+  transition: color 0.4s linear;
+  position: relative;
+  overflow: hidden;
+}
+
+.home .btn::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: var(--main-color);
+  z-index: -1;
+  transition: transform 0.4s;
+  transform-origin: 0 0;
+  transition-timing-function: cubic-bezier(0.5, 1.6, 0.4, 0.7);
+}
+
+.home .btn::before {
+  transform: scaleX(0);
+}
+
+.home .btn:hover::before {
+  transform: scaleX(1);
+}
+
+.btn:hover {
+  color: white;
+}
+
+.img-border {
+  border-radius: 77% 23% 23% 77% / 54% 34% 66% 46%;
+  /* border-radius: 68% 32% 27% 73% / 40% 57% 43% 60%; */
+
+  background-color: var(--main-color);
+  height: 100%;
+  width: 90%;
+  margin: auto;
+  overflow: hidden;
+}
+
+.home img {
+  width: 50%;
+  border-radius: 5%;
+
+  margin-top: 5%;
+}
+
+/* End -  Home Section */
+
+/* Start - About Section */
+
+.progress-bars {
+  display: grid;
+  grid-template-columns: repeat(1, 100%);
+}
+
+.progress-bar {
+  display: grid;
+  grid-template-columns: repeat(1, 10% 88%);
+  gap: 2%;
+  height: 10vh;
+}
+
+.progress-bar h5 {
+  font-weight: 500;
+  margin-top: 20px;
+  text-align: left;
+}
+.progress-bar i {
+  font-size: 1.7rem;
+  color: var(--main-color);
+  margin: 20px auto;
+}
+
+.progress {
+  width: 100%;
+  height: 15px;
+  position: relative;
+  border-radius: 25px;
+  margin: auto;
+}
+
+.progress span {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  background-color: var(--main-color);
+  color: white;
+  font-weight: bold;
+  font-size: 12px;
+}
+
+.progress .html {
+  width: 90%;
+  border-radius: 25px;
+  color: white;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.progress .css {
+  width: 90%;
+  border-radius: 25px;
+}
+
+.bootstrap {
+  width: 90%;
+  border-radius: 25px;
+}
+.progress .js {
+  width: 80%;
+  border-radius: 25px;
+}
+
+/* End - About Section */
+
+/* Start - Services Section */
+
+.services .box {
+  border: 1px solid var(--bg-second);
+  border-radius: 15px;
+  cursor: pointer;
+  transition: 0.5s;
+  height: 100%;
+}
+
+.box-icon {
+  height: 15vh;
+  width: 15vh;
+  border: 1px solid var(--bg-second);
+  display: flex;
+  align-items: center;
+  border-radius: 50%;
+  justify-content: center;
+  cursor: pointer;
+  margin: 15px auto;
+  transition: 0.5s;
+}
+
+.box i,
+.box h4 {
+  transition: 0.5s;
+  color: var(--bg-second);
+}
+
+.box:hover,
+.box:hover .box-icon {
+  border-color: var(--main-color);
+}
+
+.box:hover i,
+.box:hover h4 {
+  color: var(--main-color);
+}
+
+.box:hover {
+  margin-top: -5px;
+}
+
+/*end - Services Section */
+
+/* Start- Projects Section */
+
+.projects .buttons a {
+  text-decoration: none;
+  padding: 7px 15px;
+  border: 1px solid var(--main-color);
+  border-radius: 30px;
+  font-size: 20px;
+  color: var(--main-color);
+  margin-right: 20px;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.projects .buttons a:hover {
+  color: white;
+  background-color: var(--main-color);
+}
+.projects .buttons .active {
+  background-color: var(--main-color);
+  color: white;
+}
+
+.projects .card {
+  cursor: pointer;
+  overflow: hidden;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+.projects img {
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+.projects img:hover {
+  transform: scale(1.2);
+}
+
+/* End - Projects Section */
+
+/* Start - Contact Section */
+
+.contact .contact-wallpaper {
+  padding: 20px;
+  overflow: hidden;
+}
+
+.contact-box {
+  margin: auto;
+  border: 2px solid var(--main-color);
+  border-radius: 15px;
+  text-align: center;
+  padding: 20px;
+}
+
+.contact-box input,
+.contact-box textarea {
+  border: none;
+  margin-bottom: 25px;
+  background: #eee;
+  padding: 10px 15px;
+  width: 80%;
+  font-size: 20px;
+}
+
+.contact-box textarea {
+  border-radius: 20px !important;
+}
+.contact input:focus,
+.contact textarea:focus {
+  outline: none;
+  border: 1px solid var(--main-color);
+}
+
+.contact button {
+  background-color: var(--main-color);
+  border: none;
+  border-radius: 50px;
+  color: white;
+  font-size: 20px;
+  width: 80%;
+  padding: 7px 0px;
+}
+
+.contact ul {
+  width: 80%;
+  margin: auto;
+}
+
+.contact i:hover {
+  animation: rotate-scale-up 0.8s linear;
+}
+
+/* End - Contact Section */
+
+/* S C R O L L - B T N */
+
+#scroller {
+  background-color: var(--main-color);
+  position: fixed;
+  margin: 20px 0px;
+  height: 10px;
+  width: 0%;
+  z-index: 100;
+}
+
+#scroller i {
+  color: white !important;
+}
+
+.scroll-btn {
+  background-color: var(--main-color);
+  position: fixed;
+  bottom: 8%;
+  right: 1%;
+  color: white;
+  font-size: 1.8rem;
+  font-weight: 800;
+  text-align: center;
+  padding: 0px 10px;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  display: none;
+  transition: 0.3s;
+}
+
+/* S C R O L L - B T N */
+
+@-webkit-keyframes rotate-scale-up {
+  0% {
+    -webkit-transform: scale(1) rotateZ(0);
+    transform: scale(1) rotateZ(0);
+  }
+  50% {
+    -webkit-transform: scale(1.3) rotateZ(180deg);
+    transform: scale(1.3) rotateZ(180deg);
+  }
+  100% {
+    -webkit-transform: scale(1) rotateZ(360deg);
+    transform: scale(1) rotateZ(360deg);
+  }
+}
+
+@keyframes animate {
+  40%,
+  60% {
+    left: 100%;
+    width: 0%;
+  }
+  100% {
+    left: 0%;
+  }
+}
+
+@media (max-width: 990px) {
+  .home .row .first {
+    order: 3;
+  }
+  .navbar .colors-box {
+    left: 5%;
+    width: 170px;
+  }
+}
+
+@media (max-width: 600px) {
+  #scroller {
+    display: none;
+  }
+}
