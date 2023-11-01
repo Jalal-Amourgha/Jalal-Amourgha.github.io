@@ -131,8 +131,8 @@ i {
 
 /* Start - Section Home */
 
-.home .row {
-  padding: 10% 0%;
+.home {
+  margin: 15% 0%;
 }
 
 .home span {
@@ -494,8 +494,8 @@ i {
 }
 
 @media (max-width: 990px) {
-  .home .row .first {
-    order: 3;
+  .home .row :nth-child(1) {
+    order: 10;
   }
   .navbar .colors-box {
     left: 5%;
@@ -506,5 +506,8 @@ i {
 @media (max-width: 600px) {
   #scroller {
     display: none;
+  }
+  .home .row :nth-child(2) {
+    margin-bottom: 20px;
   }
 }
