@@ -70,6 +70,11 @@ i {
   text-decoration: none;
   margin-right: 15px;
   color: var(--bg-second);
+  cursor: pointer;
+}
+
+.navbar a:hover {
+  color: var(--main-color);
 }
 
 .navbar .active {
@@ -509,5 +514,12 @@ i {
   }
   .home .row :nth-child(2) {
     margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 375px) {
+  .projects .buttons a {
+    margin-right: 5px;
+    padding: 7px;
   }
 }
