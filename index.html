@@ -56,12 +56,12 @@
   <!-- Home Section-->
   <section class="home" id="home">
     <div class="container">
-      <div class="row">
-        <div class="col-lg-6 col-md-12 col-sm12">
+      <div class="home-boxs">
+        <div class="information-box overflow-hidden">
           <h1>Hi,</h1>
           <h1>I'm <span class="my-name"></span></h1>
           <p class="fs-5">
-            I'm creative Frontend develloper, i'm very passionate and
+            I'm creative Frontend Developer, i'm very passionate and
             dedicated to my work.
           </p>
           <ul class="list-unstyled d-flex">
@@ -82,7 +82,7 @@
           </ul>
           <a class="btn" href="./src/cv.pdf" target="_blank">Download CV</a>
         </div>
-        <div class="col-lg-6 col-md-12 col-sm12">
+        <div class="img-box">
           <div class="img-border text-center">
             <img src="src/images/main.png" alt="my image" />
           </div>
@@ -119,36 +119,49 @@
           <h4 class="text-uppercase">Languages <span>&</span> frameworks</h4>
           <div class="progress-bars">
             <div class="progress-bar">
-              <div>
+              <div class="icon-box">
                 <i class="fa-brands fa-html5"></i>
               </div>
               <div class="progress">
-                <span class="html">90%</span>
+                <span class="html"></span>
               </div>
+                <span class="percentage html-percentage">100%</span>
             </div>
             <div class="progress-bar">
-              <div>
+              <div class="icon-box">
                 <i class="fa-brands fa-css3-alt"></i>
               </div>
               <div class="progress">
-                <span class="css">90%</span>
+                <span class="css"></span>
               </div>
+                <span class="percentage css-percentage">90%</span>
             </div>
             <div class="progress-bar">
-              <div>
+              <div class="icon-box">
                 <i class="fa-brands fa-bootstrap"></i>
               </div>
               <div class="progress">
-                <span class="bootstrap">90%</span>
+                  <span class="bootstrap"></span>
               </div>
+                <span class="percentage bootstrap-percentage">90%</span>
             </div>
             <div class="progress-bar">
-              <div>
+              <div class="icon-box">
                 <i class="fa-brands fa-square-js"></i>
               </div>
               <div class="progress">
-                <span class="js">80%</span>
+                  <span class="js"></span>
               </div>
+                <span class="percentage js-percentage">80%</span>
+            </div>
+            <div class="progress-bar">
+              <div class="icon-box">
+                <i class="fa-brands fa-react"></i>
+              </div>
+              <div class="progress">
+                  <span class="react"></span>
+              </div>
+                <span class="percentage react-percentage">70%</span>
             </div>
           </div>
         </div>
@@ -184,8 +197,8 @@
             <div class="box-icon">
               <i class="fa-brands fa-square-js fs-1"></i>
             </div>
-            <h4 class="pt-3 pb-3 text-uppercase">JavaScript apps</h4>
-            <p>I can Create JavaScript Apps, games, apis ...</p>
+            <h4 class="pt-3 pb-3 text-uppercase">JS & React  apps</h4>
+            <p>I can Create JavaScript & React Js Apps, games ...</p>
           </div>
         </div>
       </div>
@@ -202,6 +215,7 @@
         <a class="active" data-filter=".all">All</a>
         <a data-filter=".web">WebSites</a>
         <a data-filter=".games">Games</a>
+        <a onclick="displayReactBox()">React Projects</a>
       </div>
       <div class="row">
         <div class="col-lg-4 col-md-6 col-sm-12 mb-3 all games">
@@ -317,6 +331,11 @@
           </div>
         </div>
       </div>
+      <div id="react">
+        <h1>Coming Soon <br>
+        ( React Projects Will be available on 15 December )
+        </h1>
+      </div>
   </section>
 
   <!-- Contact Section -->
@@ -368,5 +387,14 @@
 <script src="src/js/bootstrap.bundle.min.js"></script>
 <script src="src/js/main.js"></script>
 <script src="https://kit.fontawesome.com/97220a04d8.js" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script> 
+<script>
+  var typed = new Typed(".my-name", {
+  strings: ["Jalal Amourgha", "Frontend Developer"],
+  typeSpeed: 100,
+  backSpeed: 100,
+  loop: true,
+});
+</script>
 
 </html>

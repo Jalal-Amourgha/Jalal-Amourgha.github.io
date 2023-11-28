@@ -1,12 +1,12 @@
 * {
-  margin: 0;
-  padding: 0;
+  margin: 0px;
+  padding: 0px;
   box-sizing: border-box;
 }
 
 :root {
   --bg-main: white;
-  --bg-second: black;
+  --bg-second: #191d2b;
   --main-color: #ff0026;
 }
 
@@ -34,6 +34,8 @@ i {
 .navbar {
   background-color: var(--bg-main);
   box-shadow: 0 1px 4px var(--main-color);
+  position: fixed;
+  width: 100%;
 }
 
 .main {
@@ -89,19 +91,19 @@ i {
 }
 
 .navbar .colors-box {
-  position: absolute;
-  bottom: -80px;
-  right: 5%;
-  min-height: 60px;
-  background-color: var(--bg-main);
-  padding: 15px 20px;
-  border-radius: 5px;
-  box-shadow: 0 4px 10px var(--main-color);
+  position: relative;
   display: none;
 }
 
 .colors-box .color-switcher {
   display: flex;
+  position: absolute;
+  top: 50px;
+  right: -10px;
+  background-color: var(--bg-main);
+  box-shadow: 0 4px 10px var(--main-color);
+  border-radius: 5px;
+  padding: 15px 20px;
 }
 
 .colors-box .color-switcher .btn {
@@ -116,7 +118,7 @@ i {
 }
 
 .colors-box .color-switcher .active {
-  box-shadow: 0 0 0 2px var(--bg-second), 0 0 0 4px var(--main-color);
+  box-shadow: 0 0 0 2px var(--bg-main), 0 0 0 4px var(--main-color);
 }
 
 .colors-box .color-switcher .col1 {
@@ -136,8 +138,14 @@ i {
 
 /* Start - Section Home */
 
-.home {
-  margin: 15% 0%;
+.home-boxs {
+  min-height: 100vh;
+  height: 100%;
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 4rem;
+  align-items: center;
 }
 
 .home span {
@@ -147,25 +155,12 @@ i {
 
 .home h1 {
   position: relative;
-  margin: 5% 0%;
 }
 .home i {
   color: var(--main-color);
 }
 .home i:hover {
   animation: rotate-scale-up 0.8s linear;
-}
-
-.home .my-name:before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 100%;
-  background-color: var(--bg-main);
-  border-left: 2px solid var(--main-color);
-  animation: animate 4s steps(14) infinite;
 }
 
 .home i {
@@ -214,10 +209,8 @@ i {
 .img-border {
   border-radius: 77% 23% 23% 77% / 54% 34% 66% 46%;
   /* border-radius: 68% 32% 27% 73% / 40% 57% 43% 60%; */
-
   background-color: var(--main-color);
-  height: 100%;
-  width: 90%;
+  padding: 15px;
   margin: auto;
   overflow: hidden;
 }
@@ -225,8 +218,6 @@ i {
 .home img {
   width: 50%;
   border-radius: 5%;
-
-  margin-top: 5%;
 }
 
 /* End -  Home Section */
@@ -242,7 +233,8 @@ i {
   display: grid;
   grid-template-columns: repeat(1, 10% 88%);
   gap: 2%;
-  height: 10vh;
+  height: 15vh;
+  position: relative;
 }
 
 .progress-bar h5 {
@@ -250,10 +242,16 @@ i {
   margin-top: 20px;
   text-align: left;
 }
+
+.progress-bar .icon-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .progress-bar i {
-  font-size: 1.7rem;
+  font-size: 1.8rem;
   color: var(--main-color);
-  margin: 20px auto;
 }
 
 .progress {
@@ -270,17 +268,11 @@ i {
   left: 0;
   height: 100%;
   background-color: var(--main-color);
-  color: white;
-  font-weight: bold;
-  font-size: 12px;
 }
 
 .progress .html {
-  width: 90%;
+  width: 100%;
   border-radius: 25px;
-  color: white;
-  font-size: 12px;
-  font-weight: bold;
 }
 
 .progress .css {
@@ -295,6 +287,34 @@ i {
 .progress .js {
   width: 80%;
   border-radius: 25px;
+}
+
+.progress .react {
+  width: 70%;
+  border-radius: 25px;
+}
+
+.percentage {
+  background: var(--main-color);
+  color: white;
+  font-size: 15px;
+  padding: 2px;
+  position: absolute;
+  top: 0px;
+  right: 5px;
+  border-radius: 10px 10px 0px 10px;
+}
+
+.css-percentage,
+.bootstrap-percentage {
+  right: 10%;
+}
+.js-percentage {
+  right: 18.5%;
+}
+
+.react-percentage {
+  right: 27%;
 }
 
 /* End - About Section */
@@ -346,14 +366,20 @@ i {
 
 /* Start- Projects Section */
 
+.projects .buttons {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 400px;
+  margin: auto;
+}
+
 .projects .buttons a {
   text-decoration: none;
-  padding: 7px 15px;
+  padding: 5px 8px;
   border: 1px solid var(--main-color);
   border-radius: 30px;
-  font-size: 20px;
   color: var(--main-color);
-  margin-right: 20px;
   cursor: pointer;
   transition: 0.5s;
 }
@@ -381,6 +407,11 @@ i {
   transform: scale(1.2);
 }
 
+#react {
+  display: none;
+  text-align: center;
+  padding: 100px 0px 200px 0px;
+}
 /* End - Projects Section */
 
 /* Start - Contact Section */
@@ -404,7 +435,7 @@ i {
   margin-bottom: 25px;
   background: #eee;
   padding: 10px 15px;
-  width: 80%;
+  width: 100%;
   font-size: 20px;
 }
 
@@ -472,6 +503,16 @@ i {
 
 /* S C R O L L - B T N */
 
+@keyframes animate {
+  40%,
+  60% {
+    left: 100%;
+  }
+  100% {
+    left: 0%;
+  }
+}
+
 @-webkit-keyframes rotate-scale-up {
   0% {
     -webkit-transform: scale(1) rotateZ(0);
@@ -487,24 +528,23 @@ i {
   }
 }
 
-@keyframes animate {
-  40%,
-  60% {
-    left: 100%;
-    width: 0%;
-  }
-  100% {
-    left: 0%;
-  }
-}
-
 @media (max-width: 990px) {
-  .home .row :nth-child(1) {
+  .navbar .color-switcher {
+    left: 10px;
+    width: 170px;
+  }
+  .home-boxs {
+    margin-top: 100px;
+    min-height: 85vh;
+  }
+  .home .information-box:nth-child(1) {
     order: 10;
   }
-  .navbar .colors-box {
-    left: 5%;
-    width: 170px;
+
+  .home-boxs {
+    grid-template-columns: 100%;
+    grid-gap: 1rem;
+    align-items: center;
   }
 }
 
@@ -515,11 +555,12 @@ i {
   .home .row :nth-child(2) {
     margin-bottom: 20px;
   }
+  /* .projects .buttons a {
+    margin-right: 5px;
+    padding: 5px;
+  } */
 }
 
-@media (max-width: 375px) {
-  .projects .buttons a {
-    margin-right: 5px;
-    padding: 7px;
-  }
-}
+/* @media (max-width: 375px) {
+  
+} */

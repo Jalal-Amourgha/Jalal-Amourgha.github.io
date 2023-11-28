@@ -62,17 +62,17 @@ function changeMode() {
   }
 }
 
-const textLoad = () => {
-  setTimeout(() => {
-    text.textContent = "Jalal Amourgha";
-  }, 0);
-  setTimeout(() => {
-    text.textContent = "A Frontend Developer";
-  }, 4000);
-};
+// const textLoad = () => {
+//   setTimeout(() => {
+//     text.textContent = "Jalal Amourgha";
+//   }, 0);
+//   setTimeout(() => {
+//     text.textContent = "A Frontend Developer";
+//   }, 4000);
+// };
 
-textLoad();
-setInterval(textLoad, 8000);
+// textLoad();
+// setInterval(textLoad, 8000);
 
 // filtering the projects section
 switcher.forEach((e) => {
@@ -87,17 +87,16 @@ function removeActive() {
   });
 }
 
-console.log(projectsBoxs);
-
 function manageImgs() {
   projectsBoxs.forEach((box) => {
     box.style.display = "none";
   });
-  // console.log(this.dataset.filter);
   document.querySelectorAll(this.dataset.filter).forEach((el) => {
-    // console.log(el);
     el.style.display = "block";
   });
+}
+function displayReactBox() {
+  document.getElementById("react").style.display = "block";
 }
 
 // changing the color of element in the navbar depending on the section
