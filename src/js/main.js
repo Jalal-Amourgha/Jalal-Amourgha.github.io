@@ -62,18 +62,6 @@ function changeMode() {
   }
 }
 
-// const textLoad = () => {
-//   setTimeout(() => {
-//     text.textContent = "Jalal Amourgha";
-//   }, 0);
-//   setTimeout(() => {
-//     text.textContent = "A Frontend Developer";
-//   }, 4000);
-// };
-
-// textLoad();
-// setInterval(textLoad, 8000);
-
 // filtering the projects section
 switcher.forEach((e) => {
   e.addEventListener("click", removeActive);

@@ -215,16 +215,19 @@ i {
 }
 
 .img-border {
-  border-radius: 77% 23% 23% 77% / 54% 34% 66% 46%;
-  /* border-radius: 68% 32% 27% 73% / 40% 57% 43% 60%; */
+  border-radius: 70% 30% 30% 70% / 60% 40% 60% 40%;
+  max-width: 380px;
+  max-height: 380px;
   background-color: var(--main-color);
   padding: 15px;
   margin: auto;
   overflow: hidden;
+  display: flex;
 }
 
 .home img {
-  width: 50%;
+  width: 230px;
+  margin: auto;
   border-radius: 5%;
 }
 
