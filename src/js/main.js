@@ -52,12 +52,14 @@ function changeMode() {
     changeModeBtn.classList.add("fa-sun");
     root.style.setProperty("--bg-main", "#191d2b");
     root.style.setProperty("--bg-second", "white");
+    root.style.setProperty("--input-bg-color", "#2c2d34");
     mode = false;
   } else {
     changeModeBtn.classList.add("fa-moon");
     changeModeBtn.classList.remove("fa-sun");
     root.style.setProperty("--bg-main", "white");
     root.style.setProperty("--bg-second", "#191d2b");
+    root.style.setProperty("--input-bg-color", "#e2e2e2 ");
     mode = true;
   }
 }
@@ -86,16 +88,6 @@ function manageImgs() {
 function displayReactBox() {
   document.getElementById("react").style.display = "block";
 }
-
-// changing the color of element in the navbar depending on the section
-function activeMenu() {
-  let section = sections.length;
-  while (--section && window.scrollY + 97 < sections[section].offsetTop) {}
-  li.forEach((e) => e.classList.remove("active"));
-  li[section].classList.add("active");
-}
-activeMenu();
-window.addEventListener("scroll", activeMenu);
 
 // show the arrow top button
 window.addEventListener("scroll", () => {
