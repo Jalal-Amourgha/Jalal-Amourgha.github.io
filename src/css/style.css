@@ -357,6 +357,10 @@ p {
   width: 60%;
 }
 
+.progress .php {
+  width: 40%;
+}
+
 .percentage {
   background: var(--main-color);
   color: white;
@@ -376,6 +380,9 @@ p {
 .react-percentage {
   right: 40%;
 }
+.php-percentage {
+  right: 60%;
+}
 
 /* End - About Section */
 
@@ -387,6 +394,10 @@ p {
   cursor: pointer;
   transition: 0.5s;
   height: 100%;
+}
+
+.services p {
+  padding: 0px 15px;
 }
 
 .box-icon {
