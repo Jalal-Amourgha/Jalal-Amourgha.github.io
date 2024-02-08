@@ -40,76 +40,41 @@ p {
 
 /* Start - Navbar */
 
-.navbar {
-  background-color: var(--bg-main);
-  box-shadow: 0 1px 4px var(--main-color);
+nav {
+  position: relative;
+  padding: 0px;
+  margin: 0px;
+}
+
+.dark-box {
   position: fixed;
-  width: 100%;
+  top: 20px;
+  right: 20px;
+  z-index: 20;
 }
 
-.main {
-  font-size: 25px;
-  width: fit-content;
-  margin: auto;
-  position: relative;
+.dark-box .dark-btn {
+  margin-bottom: 15px;
 }
 
-.main::before {
-  content: attr(data-text);
-  position: absolute;
-  top: 0;
-  left: 0;
-  -webkit-text-fill-color: var(--main-color);
-  transition: 0.5s;
-  width: 0;
-  overflow: hidden;
-  z-index: 10;
-}
-
-.main:hover::before {
-  width: 100%;
-}
-
-.navbar button {
-  border: 1px solid var(--main-color);
-}
-.navbar button:focus {
-  box-shadow: none;
-}
-
-.navbar a {
-  text-decoration: none;
-  margin-right: 15px;
-  color: var(--bg-second);
-  cursor: pointer;
-  transition: 0.4s;
-}
-
-.navbar a:hover {
-  color: var(--main-color) !important;
-}
-
-.navbar i {
-  font-size: 23px;
-  color: var(--main-color);
-  cursor: pointer;
-  padding: 10px;
-}
-
-.navbar .colors-box {
-  position: relative;
+nav .colors-box {
+  position: fixed;
   display: none;
+  top: 89px;
+  right: 50px;
+  z-index: 20;
 }
 
 .colors-box .color-switcher {
   display: flex;
   position: absolute;
-  top: 50px;
-  right: -10px;
-  background-color: var(--bg-main);
-  box-shadow: 0 4px 10px var(--main-color);
+  top: 2px;
+  right: 50px;
+  background-color: var(--input-bg-color);
+  box-shadow: 0 1px 10px var(--main-color);
   border-radius: 5px;
-  padding: 15px 20px;
+  padding: 10px 15px;
+  z-index: 50;
 }
 
 .colors-box .color-switcher .btn {
@@ -140,6 +105,64 @@ p {
   background: #940b92;
 }
 
+.nav-links {
+  position: fixed;
+  top: 28%;
+  right: 20px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
+  height: fit-content;
+  z-index: 10;
+}
+
+.nav-links ul {
+  list-style: none;
+  padding: 0px;
+  margin: 0px;
+}
+
+nav ul a {
+  margin-bottom: 15px;
+}
+
+.icon-link {
+  height: 50px;
+  width: 50px;
+  background: var(--input-bg-color);
+  color: var(--bg-second) !important;
+  display: flex;
+  align-items: center;
+  font-size: 25px;
+  justify-content: center;
+  text-decoration: none;
+  border-radius: 50%;
+  transition: 0.5s;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.icon-link i {
+  transition: 0.5s;
+}
+
+.icon-link:hover {
+  background: var(--main-color);
+}
+
+.icon-link:hover i {
+  color: var(--bg-main);
+}
+
+ul .icon-link:hover i {
+  animation: rotate-scale-up 0.8s linear;
+}
+
+.nav-mobile {
+  display: none;
+}
+
 /* End - Navbar */
 
 /* Start - Section Home */
@@ -159,61 +182,26 @@ p {
   color: var(--main-color);
 }
 
-.home h1 {
-  position: relative;
+.home .icon-link {
+  margin-right: 15px;
 }
-.home .button {
-  display: inline-block;
-  height: 40px;
-  width: 40px;
-  float: left;
-  margin: 0 5px;
-  overflow: hidden;
-  background: none;
-  border: 1px solid var(--bg-second);
-  border-radius: 50px;
-  cursor: pointer;
-  transition: all 0.5s ease-out;
+.home .linkedin:hover {
+  background: #0077b5;
 }
-.home .button:hover {
-  width: 155px;
-  border-color: var(--main-color);
+.home .github:hover {
+  background: #333333;
 }
-
-.home .button a {
-  display: inline-block;
-  height: 40px;
-  width: 40px;
-  border-radius: 50px;
-  box-sizing: border-box;
-  line-height: 40px;
+.home .instagram:hover {
+  background: linear-gradient(
+    45deg,
+    #515bd4,
+    #8134af,
+    #dd2a7b,
+    #f58529,
+    #feda77
+  );
 }
 
-.home .button i {
-  font-size: 20px;
-  line-height: 40px;
-  margin-left: 10px;
-  color: var(--bg-second);
-}
-
-.home .button span {
-  font-size: 20px;
-  line-height: 30px;
-  font-weight: 500;
-  margin-left: 10px;
-  color: var(--bg-second);
-}
-
-.home .button:hover i {
-  color: var(--bg-main);
-}
-
-.home .button:hover a {
-  background: var(--main-color);
-}
-.home .button:hover span {
-  color: var(--main-color);
-}
 .home .download-btn {
   width: 185px;
   font-size: 18px;
@@ -327,7 +315,7 @@ p {
 
 .progress {
   width: 100%;
-  height: 15px;
+  height: 10px;
   position: relative;
   border-radius: 25px;
   margin: auto;
@@ -492,34 +480,13 @@ p {
   font-size: 20px;
 }
 
-.contact a {
-  height: 50px;
-  width: 50px;
-  background: var(--input-bg-color);
-  color: var(--bg-second) !important;
-  display: flex;
-  align-items: center;
-  font-size: 25px;
-  margin-right: 25px;
-  justify-content: center;
-  text-decoration: none;
-  border-radius: 50%;
-  transition: 0.5s;
-  overflow: hidden;
-}
-
-.contact a:hover {
-  background: var(--main-color);
-}
-
-.contact a:hover i {
-  animation: rotate-scale-up 0.8s linear;
-  color: var(--bg-main);
-}
-
 .contact h6,
 .contact p {
   margin: 0px !important;
+}
+
+.contact .icon-link {
+  margin-right: 15px;
 }
 
 .contact input,
@@ -607,22 +574,6 @@ p {
   }
 }
 
-@media (min-width: 990px) {
-  .navbar a::after {
-    content: "";
-    position: absolute;
-    width: 0%;
-    height: 2px;
-    background-color: var(--main-color);
-    bottom: -3px;
-    left: 0px;
-    transition: ease 0.4s;
-  }
-  .navbar a:hover::after {
-    width: calc(100% - 15px);
-  }
-}
-
 @media (min-width: 1100px) {
   .about .row p {
     font-size: 20px;
@@ -630,21 +581,6 @@ p {
 }
 
 @media (max-width: 990px) {
-  nav .text-center li {
-    margin: 20px 0px;
-  }
-
-  nav .colors-ul {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-  }
-
-  .navbar .color-switcher {
-    left: calc(50% - 85px);
-    width: 170px;
-  }
-
   .home-boxs {
     margin-top: 100px;
     min-height: 85vh;
@@ -652,7 +588,6 @@ p {
   .home .information-box:nth-child(1) {
     order: 10;
   }
-
   .home-boxs {
     grid-template-columns: 100%;
     grid-gap: 1rem;
@@ -661,9 +596,31 @@ p {
 }
 
 @media (max-width: 600px) {
-  #scroller {
+  .dark-box {
+    right: 5px;
+  }
+  .colors-box .color-switcher {
+    right: 20px;
+  }
+  .nav-links {
     display: none;
   }
+  .nav-mobile {
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    top: calc(90% + 4px);
+    left: 0px;
+    z-index: 50;
+    width: 100%;
+    padding: 10px;
+    background: var(--input-bg-color);
+  }
+
+  .nav-mobile .icon-link {
+    border: 1px solid var(--bg-second);
+  }
+
   .home .row :nth-child(2) {
     margin-bottom: 20px;
   }

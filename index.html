@@ -14,43 +14,46 @@
 
 <body>
   <!-- Navbar Section -->
-  <nav class="navbar navbar-expand-lg sticky-top">
-    <div class="container">
-      <a class="navbar-brand fs-5" href="#home">
-        <h3 class="main" data-text="< Jalal />">
-          < Jalal />
-        </h3>
-      </a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <i class="fa-solid fa-bars"></i>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav ms-auto mb-2 mb-lg-0 fs-5 text-center">
-          <li class="position-relative"><a onclick="scrollBack()" class="link active">Home</a></li>
-          <li class="position-relative"><a href="#about" class="link">About</a></li>
-          <li class="position-relative"><a href="#services" class="link">Services</a></li>
-          <li class="position-relative"><a href="#projects" class="link">Projects</a></li>
-          <li class="position-relative"><a href="#contact" class="link">Contact</a></li>
-        </ul>
-        <ul class="colors-ul navbar-nav ms-auto mb-2 mb-lg-0 fs-5">
-          <li>
-            <i class="fa-solid fa-moon" id="changeModeBtn" onclick="changeMode()"></i>
-          </li>
-          <li>
-            <i class="fa-solid fa-palette switcher" onclick="switcherBox()"></i>
-          </li>
-        </ul>
-        <div class="colors-box">
-          <div class="color-switcher">
-            <button class="btn col1 active" data-color="#ff0026"></button>
-            <button class="btn col2" data-color="#0174BE"></button>
-            <button class="btn col3" data-color="#52b788 "></button>
-            <button class="btn col4" data-color="#940B92"></button>
-          </div>
+  <nav>
+    <div class="container position-relative">
+      <div class="dark-box">
+        <span class="icon-link dark-btn" onclick="changeMode()"><i class="fa-solid fa-circle-half-stroke"
+            id="changeModeBtn"></i>
+        </span>
+        <span class="icon-link" onclick="switcherBox()"><i class="fa-solid fa-palette"></i></span>
+      </div>
+      <div class="colors-box">
+        <div class="color-switcher">
+          <button class="btn col1 active" data-color="#ff0026"></button>
+          <button class="btn col2" data-color="#0174BE"></button>
+          <button class="btn col3" data-color="#52b788 "></button>
+          <button class="btn col4" data-color="#940B92"></button>
         </div>
       </div>
-    </div>
+      <div class="nav-links">
+        <ul class="list-und text-center">
+          <li class="position-relative"><a href="#home" onclick="scrollBack()" class="icon-link active"><i
+                class="fa-solid fa-user"></i></a></li>
+          <li class="position-relative"><a href="#about" class="icon-link"><i class="fa-solid fa-address-card"></i></a>
+          </li>
+          <li class="position-relative"><a href="#services" class="icon-link"><i class="fa-solid fa-list-check"></i></a>
+          </li>
+          <li class="position-relative"><a href="#projects" class="icon-link"><i
+                class="fa-solid fa-folder-closed"></i></a>
+          </li>
+          <li class="position-relative"><a href="#contact" class="icon-link"><i
+                class="fa-solid fa-address-book"></i></a>
+          </li>
+        </ul>
+      </div>
+      <div class="nav-mobile">
+        <a href="#home" onclick="scrollBack()" class="icon-link active"><i class="fa-solid fa-user"></i></a>
+        <a href="#about" class="icon-link"><i class="fa-solid fa-address-card"></i></a>
+        <a href="#services" class="icon-link"><i class="fa-solid fa-list-check"></i></a>
+        <a href="#projects" class="icon-link"><i class="fa-solid fa-folder-closed"></i></a>
+        <a href="#contact" class="icon-link"><i class="fa-solid fa-address-book"></i></a>
+      </div>
+
   </nav>
 
   <!-- Home Section-->
@@ -58,32 +61,20 @@
     <div class="container">
       <div class="home-boxs">
         <div class="information-box overflow-hidden">
-          <h1>Hi,</h1>
-          <h1>I'm <span class="my-name"></span></h1>
+          <h1 class="position-relative">Hi,</h1>
+          <h1 class="position-relative">I'm <span class="my-name"></span></h1>
           <p class="fs-5 mt-3 mb-4">
             I'm deeply passionate about web development. I specialize in creating captivating and responsive user
             interfaces. Let's
             build something extraordinary together.
           </p>
-          <div class="said d-flex mb-4">
-            <div class="button">
-              <a href="https://www.instagram.com/amr___jalal/" target="_blank"><i
-                  class="fa-brands fa-instagram"></i></a>
-              <span>Instagram</span>
-            </div>
-            <div class="button">
-              <a href="https://twitter.com/Amr_Jalal22" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
-              <span>Twitter</span>
-            </div>
-            <div class="button">
-              <a href="https://www.linkedin.com/in/jalal-amourgha/" target="_blank"><i
-                  class="fa-brands fa-linkedin-in"></i></a>
-              <span>Linkedin</span>
-            </div>
-            <div class="button">
-              <a href="https://github.com/Jalal-Amourgha" target="_blank"><i class="fa-brands fa-github"></i></a>
-              <span>Github</span>
-            </div>
+          <div class="social-links d-flex mb-4">
+            <a href="https://www.linkedin.com/in/jalal-amourgha/" target="_blank" class="icon-link linkedin"><i
+                class="fa-brands fa-linkedin-in"></i></a>
+            <a href="https://github.com/Jalal-Amourgha" target="_blank" class="icon-link github"><i
+                class="fa-brands fa-github"></i></a>
+            <a href="https://www.instagram.com/amr___jalal/" target="_blank" class="icon-link instagram"><i
+                class="fa-brands fa-instagram"></i></a>
           </div>
           <a class="download-btn" href="./src/Lebenslauf.pdf" target="_blank">Download CV <i
               class="fa-solid fa-download"></i></a>
@@ -128,7 +119,6 @@
   </section>
 
   <!-- Skills Section -->
-
   <section class="skills">
     <div class="container">
       <div class="text-center text-uppercase mt-5 mb-5">
@@ -137,7 +127,6 @@
       <div class="row">
         <div class="col-lg-6 col-md-6">
           <div class="progress-bars">
-
             <div class="progress-bar">
               <h6 class="position-absolute">HTML</h6>
               <div class="progress">
@@ -440,13 +429,13 @@
               </div>
               <p>Abdelmalek Essaadi University</p>
             </div>
-            <div class="d-flex justify-content-center justify-content-sm-start mt-4">
-              <a href="https://www.instagram.com/amr___jalal/" target="_blank"><i
-                  class="fa-brands fa-instagram"></i></a>
-              <a href="https://twitter.com/Amr_Jalal22" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
-              <a href="https://www.linkedin.com/in/jalal-amourgha/" target="_blank"><i
+            <div class="d-flex mt-4">
+              <a href="https://www.linkedin.com/in/jalal-amourgha/" target="_blank" class="icon-link"><i
                   class="fa-brands fa-linkedin-in"></i></a>
-              <a href="https://github.com/Jalal-Amourgha" target="_blank""><i class=" fa-brands fa-github"></i></a>
+              <a href="https://github.com/Jalal-Amourgha" target="_blank" class="icon-link"><i
+                  class=" fa-brands fa-github"></i></a>
+              <a href="https://www.instagram.com/amr___jalal/" target="_blank" class="icon-link"><i
+                  class="fa-brands fa-instagram"></i></a>
             </div>
           </div>
           <div class="col-lg-6 col-md-6 col-sm-12">
@@ -464,10 +453,8 @@
       </div>
   </section>
 
-  <!-- S C R O L L E R - B T N -->
-  <div id="scroller">
-    <button class="scroll-btn" onclick="scrollBack()"><i class="fa-solid fa-arrow-up"></i></button>
-  </div>
+
+
 </body>
 <script src="src/js/bootstrap.bundle.min.js"></script>
 <script src="src/js/main.js"></script>
