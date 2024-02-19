@@ -6,10 +6,10 @@
 }
 
 :root {
-  --bg-main: white;
-  --bg-second: #191d2b;
-  --main-color: #ff0026;
-  --input-bg-color: #e2e2e2;
+  --bg-main: #191d2b;
+  --bg-second: white;
+  --main-color: #52b788;
+  --input-bg-color: #2c2d34;
 }
 
 ::-webkit-scrollbar {

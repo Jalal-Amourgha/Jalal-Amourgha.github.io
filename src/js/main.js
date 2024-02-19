@@ -43,15 +43,15 @@ switcherButtons.forEach((button) => {
 function changeMode() {
   if (mode) {
     changeModeBtn.style.transform = "rotateZ(180deg)";
-    root.style.setProperty("--bg-main", "#191d2b");
-    root.style.setProperty("--bg-second", "white");
-    root.style.setProperty("--input-bg-color", "#2c2d34");
+    root.style.setProperty("--bg-main", "white");
+    root.style.setProperty("--bg-second", "#191d2b");
+    root.style.setProperty("--input-bg-color", "#e2e2e2");
     mode = false;
   } else {
     changeModeBtn.style.transform = "rotateZ(0deg)";
-    root.style.setProperty("--bg-main", "white");
-    root.style.setProperty("--bg-second", "#191d2b");
-    root.style.setProperty("--input-bg-color", "#e2e2e2 ");
+    root.style.setProperty("--bg-main", "#191d2b");
+    root.style.setProperty("--bg-second", "white");
+    root.style.setProperty("--input-bg-color", "#2c2d34");
     mode = true;
   }
 }
