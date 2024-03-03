@@ -107,7 +107,7 @@ nav .colors-box {
 
 .nav-links {
   position: fixed;
-  top: 28%;
+  top: calc(50% - 160px);
   right: 20px;
   display: flex;
   justify-content: space-between;
