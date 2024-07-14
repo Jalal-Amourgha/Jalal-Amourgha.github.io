@@ -1,9 +1,28 @@
 import { GiCheckMark } from "react-icons/gi";
 import { skills } from "../../constants";
-
+import ScrollReveal from "scrollreveal";
+import { useEffect } from "react";
 const Skills = () => {
+  useEffect(() => {
+    const sr = ScrollReveal();
+
+    sr.reveal(".skills", {
+      duration: 1500,
+      distance: "50px",
+      easing: "ease-in-out",
+      origin: "right",
+      reset: true,
+    });
+
+    return () => {
+      sr.clean(".skills");
+    };
+  }, []);
   return (
-    <section className="max-w-[900px] w-full mx-auto py-[80px]" id="skills">
+    <section
+      className="max-w-[900px] w-full mx-auto py-[150px] skills"
+      id="skills"
+    >
       <h1 className="text-center text-white text-4xl font-bold mb-20">
         skills
       </h1>

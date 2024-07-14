@@ -39,7 +39,7 @@ export const navLinks = [
 export const paragraphs = [
   {
     paragraph:
-      "Hi, I'm Jalal Amourgha, a passionate and dedicated junior full stack developer from Morocco. With a strong foundation in web development, I have mastered fundamentals of the frontend, ensuring seamless and interactive user experiences. My backend skills are focused on Next.js, MongoDB, and TypeScript, allowing me to build robust and scalable web applications.",
+      "Hi, I'm Jalal Amourgha, a passionate and dedicated junior software developer from Morocco. With a strong foundation in web development, I have mastered fundamentals of the frontend, ensuring seamless and interactive user experiences. My backend skills are focused on Next.js, MongoDB, and TypeScript, allowing me to build robust and scalable web applications.",
     project: false,
     projects: [],
   },

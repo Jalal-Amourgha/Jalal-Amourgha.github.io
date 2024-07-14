@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import Poppup from "../shared/Poppup";
+import ScrollReveal from "scrollreveal";
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -51,10 +52,26 @@ const Contact = () => {
     };
   }, [submitted]);
 
+  useEffect(() => {
+    const sr = ScrollReveal();
+
+    sr.reveal(".contact", {
+      duration: 1600,
+      distance: "50px",
+      easing: "ease-in-out",
+      origin: "bottom",
+      reset: true,
+    });
+
+    return () => {
+      sr.clean(".contact");
+    };
+  }, []);
+
   return (
     <>
       <section
-        className="max-w-[800px] w-full mx-auto  py-[130px]"
+        className="max-w-[800px] w-full mx-auto py-[130px] contact"
         id="contact"
       >
         <h1 className="text-center text-white text-4xl font-bold mb-20">

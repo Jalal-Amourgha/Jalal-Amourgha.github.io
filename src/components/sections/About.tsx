@@ -1,9 +1,26 @@
+import { useEffect } from "react";
 import { paragraphs } from "../../constants";
 import { FaCircle } from "react-icons/fa";
+import ScrollReveal from "scrollreveal";
 
 const About = () => {
+  useEffect(() => {
+    const sr = ScrollReveal();
+
+    sr.reveal(".about", {
+      duration: 1800,
+      distance: "50px",
+      easing: "ease-in-out",
+      origin: "bottom",
+      reset: true,
+    });
+
+    return () => {
+      sr.clean(".about");
+    };
+  }, []);
   return (
-    <section className="max-w-[1000px] mx-auto py-[130px]" id="about">
+    <section className="max-w-[1000px] mx-auto py-[130px] about" id="about">
       <h1 className="text-center text-white text-4xl font-bold mb-20">
         About <span className="text-primary">me</span>
       </h1>
