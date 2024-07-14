@@ -1,0 +1,111 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --primary: #1abc9c;
+  --background-color: #222;
+  --font-roboto: "Roboto Mono", monospace;
+  --font-rubik: "Rubik", sans-serif;
+}
+
+* {
+  scroll-behavior: smooth;
+}
+body {
+  @apply bg-bg-color  selection:bg-primary selection:text-white;
+}
+
+h1,
+h2,
+p {
+  @apply text-white m-0 p-0;
+}
+
+h1 {
+  @apply uppercase font-rubik font-bold text-4xl;
+}
+p,
+li {
+  @apply font-roboto text-base font-light;
+}
+section {
+  @apply px-3;
+}
+
+input,
+textarea {
+  @apply p-3 bg-bg-color w-full rounded-2xl text-2xl border-1 border-[#888888] text-white focus:outline-white resize-none;
+}
+/* S T A R T - N A V */
+
+.nav__link::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  border-radius: 4px;
+  background-color: var(--primary);
+  bottom: 0;
+  left: 0;
+  transform-origin: right;
+  transform: scaleX(0);
+  transition: transform 0.3s ease-in-out;
+}
+
+.nav__link:hover::before {
+  transform-origin: left;
+  transform: scaleX(1);
+}
+
+.nav__link.active {
+  color: var(--primary);
+}
+
+.nav__link.active::before {
+  background-color: var(--primary);
+  transform-origin: left;
+  transform: scaleX(1);
+}
+
+/* E N D - N A V */
+
+.project__box:hover .project__title {
+  color: var(--primary);
+}
+
+/* S T A R T - S C R O L L */
+.scroll {
+  height: 80px;
+  width: 30px;
+  background: var(--background-color);
+  border: 1px solid white;
+  border-radius: 9999px;
+  margin: auto;
+  overflow: hidden;
+  position: relative;
+}
+
+.scroll::after {
+  content: "";
+  position: absolute;
+  top: 100px;
+  left: calc(50% - 10px);
+  height: 20px;
+  width: 20px;
+  background: white;
+  border-radius: 9999px;
+  animation: scroll-down 1.5s infinite;
+}
+
+@keyframes scroll-down {
+  from {
+    background: white;
+    top: 10px;
+  }
+  to {
+    background: none;
+    top: 50px;
+  }
+}
+/* E N D - S C R O L L */
