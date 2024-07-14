@@ -39,7 +39,7 @@ export const navLinks = [
 export const paragraphs = [
   {
     paragraph:
-      "Hi, I'm Jalal Amourgha, a passionate and dedicated junior software developer from Morocco. With a strong foundation in web development, I have mastered fundamentals of the frontend, ensuring seamless and interactive user experiences. My backend skills are focused on Next.js, MongoDB, and TypeScript, allowing me to build robust and scalable web applications.",
+      "Hi, I'm Jalal Amourgha, a passionate and dedicated junior software developer from Morocco. With a strong foundation in web development, I have developed extensive expertise in frontend technologies and practices, ensuring seamless and interactive user experiences. My backend skills are focused on Next.js, MongoDB, and TypeScript, allowing me to build robust and scalable web applications.",
     project: false,
     projects: [],
   },
@@ -123,7 +123,7 @@ export const projects = [
     description:
       "Twitter clone application built with Next.js. Users can register, create posts, like, comment, repost, bookmark posts, search for other users, follow/unfollow them, and see their posts.",
     git_link: "https://github.com/Jalal-Amourgha/Twitter_Clone",
-    web_link: "https://github.com/Jalal-Amourgha/Twitter_Clone",
+    web_link: "https://twitter-clone-nine-eta.vercel.app/",
     technologies: [tech1, tech2, tech3, tech4, tech10, tech8],
   },
   {
@@ -131,7 +131,7 @@ export const projects = [
     name: "Spotify Clone",
     img: project2,
     description:
-      "Spotify clone built using React. The application mimics the core functionalities of Spotify, allowing users to create their own playlists song or liked collection and search for tehre favorite artist.",
+      "Spotify clone built using React. The application mimics the core functionalities of Spotify, allowing users to create their own playlists song or liked collection and search for their favorite artist.",
     git_link: "https://github.com/Jalal-Amourgha/Spotify-Clone",
     web_link: "https://jalal-amourgha.github.io/Spotify-Clone/",
     technologies: [tech9, tech2, tech3, tech4],
@@ -172,7 +172,7 @@ export const projects = [
     img: project6,
     description:
       "E-Tech an ecommerce website for all tech-related products. From the latest smartphones to high-performance laptops. E-Tech offers a wide range of technology products to meet your needs.",
-    git_link: "https://github.com/Jalal-Amourgha/E-Tech ",
+    git_link: "https://github.com/Jalal-Amourgha/E-Tech",
     web_link: "https://e-tech-chi.vercel.app/",
     technologies: [tech1, tech2, tech3, tech4, tech8],
   },
