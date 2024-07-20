@@ -60,7 +60,10 @@ const Projects = () => {
     };
   }, []);
   return (
-    <section className="container mx-auto py-[130px]" id="projects">
+    <section
+      className="container mx-auto py-[130px] overflow-x-hidden"
+      id="projects"
+    >
       <h1 className="text-center text-white text-4xl font-bold mb-20">
         projects
       </h1>

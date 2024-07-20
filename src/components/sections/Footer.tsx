@@ -19,7 +19,7 @@ const Footer = () => {
   }, []);
   return (
     <p className="text-center text-lg text-gray-1 mb-[100px] mt-[100px] md:mb-10 footer">
-      &#169; 2022-2024 - Jalal Amourgha. <br />
+      &#169; 2024 - Jalal Amourgha. <br />
       All rights reserved.
     </p>
   );

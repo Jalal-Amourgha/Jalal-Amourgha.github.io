@@ -94,15 +94,11 @@ const Nav = () => {
         >
           {mobileNav.map((link) => (
             <a
-              className="flex flex-col justify-center gap-1 text-center text-white hover:text-primary capitalize"
+              className="text-center text-2xl text-white hover:text-primary capitalize"
               href={`#${link.href}`}
               key={link.href}
             >
-              <div className="text-xl mx-auto">
-                {activeSection === link.href ? link.active : link.icon}
-              </div>
-
-              <span className="roboto text-[16px]">{link.href}</span>
+              {activeSection === link.href ? link.active : link.icon}
             </a>
           ))}
         </Scrollspy>
