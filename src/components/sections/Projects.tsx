@@ -1,6 +1,7 @@
 import { useEffect } from "react";
 import { projects } from "../../constants";
 import { FaGithub } from "react-icons/fa";
+import { FiExternalLink } from "react-icons/fi";
 import ScrollReveal from "scrollreveal";
 
 const Projects = () => {
@@ -111,13 +112,22 @@ const Projects = () => {
                   </li>
                 ))}
               </ul>
-              <a
-                href={project.git_link}
-                className="text-3xl text-white hover:text-primary cursor-pointer"
-                target="_blank"
-              >
-                <FaGithub />
-              </a>
+              <div className="flex items-center gap-2 text-2xl md:text-3xl text-white">
+                <a
+                  href={project.git_link}
+                  className="hover:text-primary cursor-pointer"
+                  target="_blank"
+                >
+                  <FaGithub />
+                </a>
+                <a
+                  href={project.web_link}
+                  className="hover:text-primary cursor-pointer"
+                  target="_blank"
+                >
+                  <FiExternalLink />
+                </a>
+              </div>
             </div>
           </div>
         ))}
