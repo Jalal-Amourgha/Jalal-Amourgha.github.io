@@ -1,7 +1,6 @@
 import { useEffect } from "react";
 import { projects } from "../../constants";
 import { FaGithub } from "react-icons/fa";
-import { TbArrowUpRight } from "react-icons/tb";
 import ScrollReveal from "scrollreveal";
 
 const Projects = () => {
