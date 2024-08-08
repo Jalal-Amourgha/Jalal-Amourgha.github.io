@@ -1,5 +1,6 @@
 import { useEffect } from "react";
 import { projects } from "../../constants";
+import { FaGithub } from "react-icons/fa";
 import { TbArrowUpRight } from "react-icons/tb";
 import ScrollReveal from "scrollreveal";
 
@@ -76,7 +77,7 @@ const Projects = () => {
             key={project.id}
           >
             <div className="rounded-3xl overflow-hidden">
-              <a href={project.git_link} target="_blank">
+              <a href={project.web_link} target="_blank">
                 <img
                   src={project.img}
                   className="max-w-full object-cover hover:scale-105 duration-300 cursor-pointer"
@@ -86,7 +87,7 @@ const Projects = () => {
             </div>
 
             <a
-              href={project.git_link}
+              href={project.web_link}
               className="text-3xl font-bold capitalize text-white hover:text-primary line-clamp-1 mt-5 mb-3 w-fit duration-200 project__title"
               target="_blank"
             >
@@ -111,18 +112,13 @@ const Projects = () => {
                   </li>
                 ))}
               </ul>
-              <div className="flex flex-row gap-3 text-white text-2xl">
-                <a
-                  className="flex items-center gap-1 hover:text-primary duration-150"
-                  href={project.web_link}
-                  target="_blank"
-                >
-                  <span className="text-base roboto font-light">
-                    Check Live Site
-                  </span>
-                  <TbArrowUpRight />
-                </a>
-              </div>
+              <a
+                href={project.git_link}
+                className="text-3xl text-white hover:text-primary cursor-pointer"
+                target="_blank"
+              >
+                <FaGithub />
+              </a>
             </div>
           </div>
         ))}
