@@ -121,7 +121,7 @@ export const projects = [
     name: "Twitter Clone",
     img: project1,
     description:
-      "Twitter clone application built with Next.js. Users can register, create posts, like, comment, repost, bookmark posts, search for other users, follow/unfollow them, and see their posts.",
+      "Twitter clone application built with Next.js. Users can register, create posts, like, comment, repost, bookmark posts ans share, search for other users, follow/unfollow them, and see their posts.",
     git_link: "https://github.com/Jalal-Amourgha/Twitter_Clone",
     web_link: "https://twitter-clone-nine-eta.vercel.app/",
     technologies: [tech1, tech2, tech3, tech4, tech10, tech8],
@@ -161,7 +161,7 @@ export const projects = [
     name: "Morocco Marvel Travels",
     img: project5,
     description:
-      "Morocco Marvel Travels a booking application where you book hotels, houses, and apartments exclusively in Morocco. Allowing users to filter by multiple options and payment methods.",
+      "Morocco Marvel Travels a booking application where you book hotels, houses, and apartments exclusively in Morocco. Allowing users to filter by multiple options, destinations and payment methods.",
     git_link: "https://github.com/Jalal-Amourgha/Morocco-Marvel-Travels",
     web_link: "https://morocco-marvel-travels.vercel.app/",
     technologies: [tech1, tech2, tech3, tech4, tech6, tech8],
@@ -171,7 +171,7 @@ export const projects = [
     name: "E-Tech",
     img: project6,
     description:
-      "E-Tech an ecommerce website for all tech-related products. From the latest smartphones to high-performance laptops. E-Tech offers a wide range of technology products to meet your needs.",
+      "E-Tech an ecommerce website for all tech-related products. From the latest smartphones to high-performance laptops. E-Tech offers a wide range of technology products to meet all your needs.",
     git_link: "https://github.com/Jalal-Amourgha/E-Tech",
     web_link: "https://e-tech-chi.vercel.app/",
     technologies: [tech1, tech2, tech3, tech4, tech8],

@@ -68,10 +68,10 @@ const Projects = () => {
       <h1 className="text-center text-white text-4xl font-bold mb-20">
         projects
       </h1>
-      <div className="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-5 md:gap-10">
+      <div className="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-5 ">
         {projects.map((project, index) => (
           <div
-            className={`bg-bg-color p-2 sm:p-4 border-1 border-gray-1 rounded-3xl hover:border-primary project__box project${
+            className={`bg-bg-color p-2 sm:p-3 border-1 border-gray-1 rounded-3xl hover:border-primary project__box project${
               index + 1
             }`}
             key={project.id}
@@ -88,13 +88,15 @@ const Projects = () => {
 
             <a
               href={project.web_link}
-              className="text-3xl font-bold capitalize text-white hover:text-primary line-clamp-1 mt-5 mb-3 w-fit duration-200 project__title"
+              className="text-xl md:text-3xl font-bold capitalize text-white hover:text-primary line-clamp-1 mt-2 md:mt-5 mb-3 w-fit duration-200 project__title"
               target="_blank"
             >
               {project.name}
             </a>
 
-            <p className="text-justify">{project.description}</p>
+            <p className="text-sm md:text-base  text-justify">
+              {project.description}
+            </p>
             <div className="flex justify-between items-center list-none mt-10">
               <ul className="flex flex-row items-center">
                 {project.technologies.map((techno, index) => (

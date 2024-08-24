@@ -84,7 +84,7 @@ const Hero = () => {
               target="_blank"
               className={`bg-white text-bg-color text-2xl font-bold py-3 px-6 w-fit mx-auto rounded-3xl animate__animated ${
                 hovered ? "animate__pulse" : ""
-              } hover:bg-primary hover:text-white hover:py-4 hover:px-7 duration-300`}
+              } hover:bg-primary hover:text-white duration-300`}
               onMouseEnter={() => setHovered(true)}
               onMouseLeave={() => setHovered(false)}
             >
