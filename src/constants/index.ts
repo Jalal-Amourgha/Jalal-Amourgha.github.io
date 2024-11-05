@@ -101,17 +101,11 @@ export const skills = [
   },
   {
     label: "frameworks",
-    technologies: ["Sass", "Jest JS", "jQuery", "Git"],
+    technologies: ["Tailwind CSS", "Sass", "jQuery"],
   },
   {
     label: "Backend",
-    technologies: [
-      "Next.JS",
-      "React.JS",
-      "Typescript",
-      "MongoDB",
-      "Tailwind CSS",
-    ],
+    technologies: ["Next.JS", "React.JS", "Typescript", "Python", "MongoDB"],
   },
 ];
 
