@@ -10,4 +10,19 @@ import Footer from "./sections/Footer";
 // Shared Component
 import Scroll from "./shared/Scroll";
 import Poppup from "./shared/Poppup";
-export { Nav, Hero, About, Skills, Projects, Contact, Footer, Scroll, Poppup };
+import SkillCard from "./cards/SkillCard";
+import ProjectCard from "./cards/ProjectCard";
+
+export {
+  Nav,
+  Hero,
+  About,
+  Skills,
+  Projects,
+  Contact,
+  Footer,
+  Scroll,
+  Poppup,
+  SkillCard,
+  ProjectCard,
+};

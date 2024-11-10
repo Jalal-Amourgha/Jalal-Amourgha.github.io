@@ -77,7 +77,7 @@ const Hero = () => {
             <p className="text-white text-xl mt-5 mb-10">
               I'm deeply passionate about <br /> web development and developing{" "}
               <br />
-              modern Next js web apps.
+              modern Next js web Apps.
             </p>
             <a
               href={resume}

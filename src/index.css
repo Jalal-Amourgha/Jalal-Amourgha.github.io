@@ -123,3 +123,16 @@ textarea {
   }
 }
 /* E N D - S C R O L L */
+
+.skill-icon::after {
+  content: "";
+  position: absolute;
+  top: -5px;
+  right: -5px;
+  height: 100%;
+  width: 100%;
+  background: var(--primary);
+  border-radius: 8px;
+  z-index: -1;
+  transition-duration: 0.5s;
+}
