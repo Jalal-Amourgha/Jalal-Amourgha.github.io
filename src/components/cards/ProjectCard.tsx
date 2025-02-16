@@ -18,10 +18,10 @@ const ProjectCard = ({ project, index }: { project: any; index: any }) => {
         duration: 0.5,
       }}
       viewport={{ amount: 0 }}
-      // onClick={() => router.push(`/anime/${anime.mal_id}`)}
+    
     >
       <div
-        className={`bg-bg-color p-2 sm:p-3 border-1 border-gray-1 rounded-3xl hover:border-primary project__box`}
+        className={`bg-bg-color max-w-[400px] p-2 sm:p-3 border-1 border-gray-1 rounded-3xl hover:border-primary project__box`}
       >
         <div className="rounded-3xl overflow-hidden">
           <a href={project.web_link} target="_blank">

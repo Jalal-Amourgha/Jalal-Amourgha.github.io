@@ -10,7 +10,6 @@ import {
   tech9,
   tech10,
   project1,
-  project2,
   project3,
   project4,
   project5,
@@ -58,11 +57,6 @@ export const paragraphs = [
         label: "Twitter Clone",
         paragraph:
           "A comprehensive platform that gives users the same features as X.",
-      },
-      {
-        label: "Spotify Clone",
-        paragraph:
-          "A replica of the original Spotify, mirroring its features and functionality.",
       },
       {
         label: "Animox",
@@ -117,19 +111,10 @@ export const projects = [
     description:
       "Twitter clone application built with Next.js. Users can register, create posts, like, comment, repost, bookmark posts ans share, search for other users, follow/unfollow them, and see their posts.",
     git_link: "https://github.com/Jalal-Amourgha/Twitter_Clone",
-    web_link: "https://twitter-clone-nine-eta.vercel.app/",
+    web_link: "https://twitter-clone-five-zeta.vercel.app/",
     technologies: [tech1, tech2, tech3, tech4, tech10, tech8],
   },
-  {
-    id: 2,
-    name: "Spotify Clone",
-    img: project2,
-    description:
-      "Spotify clone built using React. The application mimics the core functionalities of Spotify, allowing users to create their own playlists song or liked collection and search for their favorite artist.",
-    git_link: "https://github.com/Jalal-Amourgha/Spotify-Clone",
-    web_link: "https://jalal-amourgha.github.io/Spotify-Clone/",
-    technologies: [tech9, tech2, tech3, tech4],
-  },
+
   {
     id: 3,
     name: "Animox",
@@ -140,16 +125,7 @@ export const projects = [
     web_link: "https://animox-beta.vercel.app/",
     technologies: [tech1, tech2, tech3, tech4, tech6, tech7, , tech8],
   },
-  {
-    id: 4,
-    name: "Brainwave",
-    img: project4,
-    description:
-      "Brainwave - Modern UI/UX website, developed using React.js. Its sleek design and seamless animations. Serving as a reference or inspiration for future modern applications or websites in general.",
-    git_link: "https://github.com/Jalal-Amourgha/Brainwave",
-    web_link: "https://jalal-amourgha.github.io/Brainwave/",
-    technologies: [tech9, tech3, tech4, tech5],
-  },
+ 
   {
     id: 5,
     name: "Morocco Marvel Travels",
@@ -169,5 +145,14 @@ export const projects = [
     git_link: "https://github.com/Jalal-Amourgha/E-Tech",
     web_link: "https://e-tech-chi.vercel.app/",
     technologies: [tech1, tech2, tech3, tech4, tech8],
+  }, {
+    id: 4,
+    name: "Brainwave",
+    img: project4,
+    description:
+      "Brainwave - Modern UI/UX website, developed using React.js. Its sleek design and seamless animations. Serving as a reference or inspiration for future modern applications or websites in general.",
+    git_link: "https://github.com/Jalal-Amourgha/Brainwave",
+    web_link: "https://jalal-amourgha.github.io/Brainwave/",
+    technologies: [tech9, tech3, tech4, tech5],
   },
 ];
