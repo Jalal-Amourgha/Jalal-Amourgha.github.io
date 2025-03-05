@@ -1,4 +1,4 @@
-import { FaGithub, FaXTwitter, FaLinkedinIn } from "react-icons/fa6";
+import { FaGithub, FaCode, FaLinkedinIn } from "react-icons/fa6";
 import { myImage } from "../../assets/";
 import { useEffect, useState } from "react";
 import Scroll from "../shared/Scroll";
@@ -8,8 +8,8 @@ import ScrollReveal from "scrollreveal";
 const socials = [
   {
     id: 1,
-    icon: <FaXTwitter />,
-    href: "https://x.com/Amr_Jalal22",
+    icon: <FaLinkedinIn />,
+    href: "https://www.linkedin.com/in/jalal-amourgha/",
   },
   {
     id: 2,
@@ -18,8 +18,8 @@ const socials = [
   },
   {
     id: 3,
-    icon: <FaLinkedinIn />,
-    href: "https://www.linkedin.com/in/jalal-amourgha/",
+    icon: <FaCode />,
+    href: "https://www.codewars.com/users/Jalal_Amr",
   },
 ];
 
@@ -69,6 +69,7 @@ const Hero = () => {
                   className=" text-white text-3xl hover:text-primary"
                   href={social.href}
                   key={social.id}
+                  target="_blank"
                 >
                   {social.icon}
                 </a>
