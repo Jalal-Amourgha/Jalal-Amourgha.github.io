@@ -14,6 +14,7 @@ import {
   project4,
   project5,
   project6,
+  project2,
 } from "../assets";
 
 export const navLinks = [
@@ -63,6 +64,7 @@ export const paragraphs = [
         paragraph: "A website dedicated to rating animes and manga.",
       },
       { label: "Brainwave", paragraph: "A Modern UI/UX website" },
+      { label: "Petful", paragraph: "Pet care agency website" },
       {
         label: "Morocco Travels",
         paragraph:
@@ -116,6 +118,26 @@ export const projects = [
   },
 
   {
+    id: 2,
+    name: "Petful",
+    img: project2,
+    description:
+      "Petful pet care platform where users can browse pet products, access health tips, book grooming services, and connect with local pet communities. Featuring easy navigation and trusted resources for all your pet's needs",
+    git_link: "",
+    web_link: "https://petful-sand.vercel.app/",
+    technologies: [tech9, tech3, tech2, tech4],
+  },
+  {
+    id: 6,
+    name: "E-Tech",
+    img: project6,
+    description:
+      "E-Tech an ecommerce website for all tech-related products. From the latest smartphones to high-performance laptops. E-Tech offers a wide range of technology products to meet all your needs.",
+    git_link: "https://github.com/Jalal-Amourgha/E-Tech",
+    web_link: "https://e-tech-chi.vercel.app/",
+    technologies: [tech1, tech2, tech3, tech4, tech8],
+  },
+  {
     id: 3,
     name: "Animox",
     img: project3,
@@ -125,7 +147,7 @@ export const projects = [
     web_link: "https://animox-beta.vercel.app/",
     technologies: [tech1, tech2, tech3, tech4, tech6, tech7, , tech8],
   },
- 
+
   {
     id: 5,
     name: "Morocco Marvel Travels",
@@ -137,15 +159,6 @@ export const projects = [
     technologies: [tech1, tech2, tech3, tech4, tech6, tech8],
   },
   {
-    id: 6,
-    name: "E-Tech",
-    img: project6,
-    description:
-      "E-Tech an ecommerce website for all tech-related products. From the latest smartphones to high-performance laptops. E-Tech offers a wide range of technology products to meet all your needs.",
-    git_link: "https://github.com/Jalal-Amourgha/E-Tech",
-    web_link: "https://e-tech-chi.vercel.app/",
-    technologies: [tech1, tech2, tech3, tech4, tech8],
-  }, {
     id: 4,
     name: "Brainwave",
     img: project4,

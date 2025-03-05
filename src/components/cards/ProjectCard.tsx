@@ -18,7 +18,6 @@ const ProjectCard = ({ project, index }: { project: any; index: any }) => {
         duration: 0.5,
       }}
       viewport={{ amount: 0 }}
-    
     >
       <div
         className={`bg-bg-color max-w-[400px] p-2 sm:p-3 border-1 border-gray-1 rounded-3xl hover:border-primary project__box`}
@@ -62,13 +61,18 @@ const ProjectCard = ({ project, index }: { project: any; index: any }) => {
             ))}
           </ul>
           <div className="flex items-center gap-2 text-2xl md:text-3xl text-white">
-            <a
-              href={project.git_link}
-              className="hover:text-primary cursor-pointer"
-              target="_blank"
-            >
-              <FaGithub />
-            </a>
+            {project.git_link ? (
+              <a
+                href={project.git_link}
+                className="hover:text-primary cursor-pointer"
+                target="_blank"
+              >
+                <FaGithub />
+              </a>
+            ) : (
+              ""
+            )}
+
             <a
               href={project.web_link}
               className="hover:text-primary cursor-pointer"
