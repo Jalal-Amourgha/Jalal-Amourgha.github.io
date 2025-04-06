@@ -109,7 +109,11 @@ textarea {
   width: 20px;
   background: white;
   border-radius: 9999px;
-  animation: scroll-down 1.5s infinite;
+  animation: scroll-down 2s infinite;
+}
+
+.scroll-text {
+  animation: scroll-text 2s infinite ease;
 }
 
 @keyframes scroll-down {
@@ -122,6 +126,16 @@ textarea {
     top: 50px;
   }
 }
+
+@keyframes scroll-text {
+  from {
+    color: white;
+  }
+  to {
+    color: var(--background-color);
+  }
+}
+
 /* E N D - S C R O L L */
 
 .skill-icon::after {

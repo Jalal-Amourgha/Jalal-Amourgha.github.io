@@ -22,7 +22,7 @@ const Scroll = () => {
     >
       <div>
         <div className="scroll"></div>
-        <p className="mt-3">Scroll</p>
+        <p className="scroll-text mt-3">Scroll</p>
       </div>
     </div>
   );

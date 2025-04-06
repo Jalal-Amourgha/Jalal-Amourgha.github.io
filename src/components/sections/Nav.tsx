@@ -94,7 +94,9 @@ const Nav = () => {
         >
           {mobileNav.map((link) => (
             <a
-              className="text-center text-2xl text-white hover:text-primary capitalize"
+              className={`text-center text-2xl ${
+                activeSection === link.href ? "text-primary" : "text-white"
+              } hover:text-primary capitalize`}
               href={`#${link.href}`}
               key={link.href}
             >
