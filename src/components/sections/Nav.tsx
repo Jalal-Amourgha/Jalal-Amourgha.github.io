@@ -63,7 +63,7 @@ const Nav = () => {
         className={`fixed top-0 left-0 hidden md:block w-full z-50 mx-0 animate__animated animate__fadeInDown`}
       >
         <nav
-          className="max-w-[500px] w-full mt-5 mx-auto p-2 md:p-4 rounded-lg bg-[#3c3c3c]"
+          className="max-w-[500px] w-full mt-5 mx-auto p-2 md:p-4 rounded-lg bg-[#222433]"
           id="mobileNav"
         >
           <Scrollspy
@@ -85,7 +85,7 @@ const Nav = () => {
 
       {/* M O B I L E - N A V */}
       <nav
-        className={`md:hidden fixed bottom-0 left-0  w-full z-50 bg-[#3c3c3c]  rounded-t-lg`}
+        className={`md:hidden fixed bottom-0 left-0  w-full z-50 bg-[#222433]  rounded-t-lg`}
       >
         <Scrollspy
           items={["home", "about", "projects", "contact"]}

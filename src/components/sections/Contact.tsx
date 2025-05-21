@@ -71,14 +71,15 @@ const Contact = () => {
   return (
     <>
       <section
-        className="max-w-[800px] w-full mx-auto py-[130px] contact"
+        className="max-w-[800px] w-full mx-auto py-[100px] contact"
         id="contact"
       >
-        <h1 className="text-center text-white text-4xl font-bold mb-20">
-          contact
+        <h1 className="text-center mb-20">
+          <span className="text-primary">C</span>
+          ontact
         </h1>
 
-        <form onSubmit={handleSubmit} className="flex flex-col gap-10">
+        <form onSubmit={handleSubmit} className="flex flex-col gap-6">
           <input
             type="text"
             name="name"

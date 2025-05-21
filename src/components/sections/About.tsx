@@ -20,9 +20,10 @@ const About = () => {
     };
   }, []);
   return (
-    <section className="max-w-[1000px] mx-auto py-[130px] about" id="about">
-      <h1 className="text-center text-white text-4xl font-bold mb-20">
-        About <span className="text-primary">me</span>
+    <section className="max-w-[1000px] mx-auto py-[100px] about" id="about">
+      <h1 className="text-center mb-20">
+        <span className="text-primary">A</span>bout{" "}
+        <span className="text-primary">ME</span>
       </h1>
       <div className="flex flex-col gap-5">
         {paragraphs.map((paragraph, index) => (
@@ -32,7 +33,7 @@ const About = () => {
               <ul className="flex flex-col list-disc list-inside gap-3 mt-5 text-white">
                 {paragraph.projects.map((project, index) => (
                   <li
-                    className=" md:grid md:grid-cols-[170px_calc(100%-178px)] gap-2 font-light"
+                    className=" md:grid md:grid-cols-[200px_calc(100%-208px)] gap-2 font-light"
                     key={index}
                   >
                     <div className="hidden md:flex items-center justify-between gap-1 font-bold text-base w-full">

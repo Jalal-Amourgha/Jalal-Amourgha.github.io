@@ -132,7 +132,7 @@ export const projects = [
     name: "E-Tech",
     img: project6,
     description:
-      "E-Tech an ecommerce website for all tech-related products. From the latest smartphones to high-performance laptops. E-Tech offers a wide range of technology products to meet all your needs.",
+      "E-Tech an ecommerce website for all tech-related products. From the latest smartphones to high-performance laptops, pc's ... . E-Tech offers a wide range of technology products to meet all your needs.",
     git_link: "https://github.com/Jalal-Amourgha/E-Tech",
     web_link: "https://e-tech-chi.vercel.app/",
     technologies: [tech1, tech2, tech3, tech4, tech8],

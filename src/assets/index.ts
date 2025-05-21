@@ -9,8 +9,6 @@ import tech8 from "./icons/tech8.png";
 import tech9 from "./icons/tech9.png";
 import tech10 from "./icons/tech10.png";
 
-import myImage from "./images/myImage.png";
-
 import project1 from "./images/project1.jpg";
 import project2 from "./images/project2.jpg";
 import project3 from "./images/project3.jpg";
@@ -29,7 +27,6 @@ export {
   tech8,
   tech9,
   tech10,
-  myImage,
   project1,
   project2,
   project3,

@@ -70,8 +70,8 @@ const Projects = () => {
       className="container mx-auto py-[130px] overflow-x-hidden"
       id="projects"
     >
-      <h1 className="text-center text-white text-4xl font-bold mb-20">
-        projects
+      <h1 className="text-center mb-20">
+        <span className="text-primary">P</span>rojects
       </h1>
       <div className="flex flex-wrap justify-center gap-5 projects">
         {projects.map((project, index) => (

@@ -5,8 +5,14 @@ export default {
   theme: {
     extend: {
       colors: {
-        primary: "#1abc9c",
-        "bg-color": "#222",
+        primary: "#70a5fd",
+        blue: "#79a1f7",
+        green: "#08c294",
+        purple: "#ba9af7",
+
+        pink: "#f7768e",
+        orage: "#ff9e63",
+        "bg-color": "#1a1b27",
         "gray-1": "#bbb",
       },
       borderWidth: {

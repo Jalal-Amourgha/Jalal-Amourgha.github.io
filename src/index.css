@@ -2,11 +2,13 @@
 @tailwind components;
 @tailwind utilities;
 
+@import url("https://fonts.googleapis.com/css2?family=Martian+Mono:wght@100..800&display=swap");
+
 :root {
-  --primary: #1abc9c;
-  --background-color: #222;
-  --font-roboto: "Roboto Mono", monospace;
-  --font-rubik: "Rubik", sans-serif;
+  --primary: #70a5fd;
+  --background-color: #222433;
+  --font-roboto: "Martian Mono", monospace;
+  --font-rubik: "Martian Mono", monospace;
 }
 
 * {
@@ -31,7 +33,7 @@ p {
 }
 
 h1 {
-  @apply uppercase font-rubik font-bold text-4xl;
+  @apply font-rubik font-bold text-[40px] md:text-[60px] capitalize;
 }
 p,
 li {
@@ -48,6 +50,48 @@ section {
 input,
 textarea {
   @apply p-3 bg-bg-color w-full rounded-2xl text-2xl border-1 border-[#888888] text-white focus:outline-none resize-none font-roboto;
+}
+
+.gradient {
+  background: #001f38;
+  background: linear-gradient(
+    90deg,
+    rgba(0, 31, 56, 1) 0%,
+    rgba(20, 214, 234, 1) 100%
+  );
+}
+
+.gradient-text {
+  background: linear-gradient(
+    90deg,
+    rgb(5, 87, 155) 0%,
+    rgba(20, 214, 234, 1) 100%
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.gradient-bg {
+  background: linear-gradient(
+    90deg,
+    rgba(0, 31, 56, 1) 0%,
+    rgba(20, 214, 234, 1) 100%
+  );
+  padding: 10px;
+  color: white;
+}
+
+.text {
+  color: #001f38;
+  transition: color 0.3s;
+}
+
+.text:hover {
+  background: linear-gradient(90deg, #001f38, #14d6ea);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
 }
 
 /* S T A R T - N A V */
@@ -150,3 +194,5 @@ textarea {
   z-index: -1;
   transition-duration: 0.5s;
 }
+
+/* M E D I A - Q U E R Y*/

@@ -2,10 +2,36 @@ import { useEffect, useState } from "react";
 import Scroll from "../shared/Scroll";
 import resume from "../../assets/resume.pdf";
 import ScrollReveal from "scrollreveal";
-import Socials from "../shared/Socials";
+import { SiCodewars, SiLeetcode } from "react-icons/si";
+import { FaGithub } from "react-icons/fa";
+import { FaLinkedin } from "react-icons/fa6";
+import avatar from "../../assets/images/avatar.png";
 
 const Hero = () => {
   const [hovered, setHovered] = useState(false);
+
+  const socials = [
+    {
+      id: 2,
+      icon: <FaGithub />,
+      href: "https://github.com/Jalal-Amourgha",
+    },
+    {
+      id: 2,
+      icon: <SiLeetcode />,
+      href: "https://leetcode.com/u/Jalal_Amr/",
+    },
+    {
+      id: 2,
+      icon: <SiCodewars />,
+      href: "https://www.codewars.com/users/Jalal_Amr",
+    },
+    {
+      id: 3,
+      icon: <FaLinkedin />,
+      href: "https://www.linkedin.com/in/jalal-amourgha/",
+    },
+  ];
 
   useEffect(() => {
     const sr = ScrollReveal();
@@ -33,32 +59,41 @@ const Hero = () => {
   return (
     <>
       <main
-        className="container mx-auto h-screen flex justify-center items-center relative overflow-hidden  md:py-0"
+        className="container mx-auto h-screen grid grid-cols-1 md:grid-cols-2 md:gap-10 relative overflow-hidden  md:py-0"
         id="home"
       >
-        <div className="flex justify-center items-center hero-info">
+        <div className="flex flex-col justify-center items-center order-2 md:order-1 hero-info">
           <div className="text-center">
-            <h1 className="text-[30px] md:text-[42px] font-light leading-[120%] rubik mb-2">
+            <h1 className="text-[50px] gradient-text font-bold leading-[120%] mb-5 rubik">
               Jalal Amourgha
             </h1>
 
-            <p className="max-w-[600px] mx-auto px-1 mb-5">
-              I'm a junior software developer from 🇲🇦{" "}
-              <br className="hidden sm:block" />
-              I'm deeply passionate about <br className="hidden sm:block" /> web
-              development and developing <br className="hidden sm:block" />
-              modern Next.js web Apps.
-            </p>
+            <h2 className="font-semibold text-lg md:text-2xl underline decoration-2 underline-offset-8 decoration-primary italic">
+              Junior Software Developer
+            </h2>
 
-            {/* <p className="text-white text-xl mt-5 mb-10">
-              I'm deeply passionate about <br /> web development and developing{" "}
+            <div className="flex items-center justify-center gap-10 mt-10">
+              {socials.map((social) => (
+                <a
+                  className=" text-white text-[40px] hover:text-primary"
+                  href={social.href}
+                  key={social.id}
+                >
+                  {social.icon}
+                </a>
+              ))}
+            </div>
+
+            <p className="text-white text-xl mt-5 mb-10">
+              I'm deeply passionate about <br /> web development and developing
               <br />
               modern Next js web Apps.
-            </p> */}
+            </p>
+
             <a
               href={resume}
               target="_blank"
-              className={`bg-white text-bg-color text-lg md:text-xl font-bold py-2 px-4 w-fit mx-auto rounded-3xl animate__animated ${
+              className={`bg-white text-bg-color text-2xl font-bold py-3 px-6 w-fit mx-auto rounded-3xl animate__animated ${
                 hovered ? "animate__pulse" : ""
               } hover:bg-primary hover:text-white duration-300`}
               onMouseEnter={() => setHovered(true)}
@@ -68,9 +103,18 @@ const Hero = () => {
             </a>
           </div>
         </div>
+
+        <div className="h-full w-full flex items-center justify-between  order-1 md:order-2 hero-img">
+          <div className="rounded-full md:rounded-2xl overflow-hidden m-auto">
+            <img
+              src={avatar}
+              className="w-[300px] md:w-[400px]"
+              alt="jalal amourgha"
+            />
+          </div>
+        </div>
       </main>
       <Scroll />
-      <Socials />
     </>
   );
 };
