@@ -23,12 +23,12 @@ const About = () => {
     <section className="max-w-[1000px] mx-auto py-[100px] about" id="about">
       <h1 className="text-center mb-20">
         <span className="text-primary">A</span>bout{" "}
-        <span className="text-primary">ME</span>
+        <span className="text-primary lowercase">me</span>
       </h1>
       <div className="flex flex-col gap-5">
         {paragraphs.map((paragraph, index) => (
           <div key={index}>
-            <p className="text-justify">{paragraph.paragraph}</p>
+            <p className="md:text-justify">{paragraph.paragraph}</p>
             {paragraph.project ? (
               <ul className="flex flex-col list-disc list-inside gap-3 mt-5 text-white">
                 {paragraph.projects.map((project, index) => (

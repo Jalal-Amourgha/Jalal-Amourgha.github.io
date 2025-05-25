@@ -2,9 +2,8 @@ import { useEffect, useState } from "react";
 import Scroll from "../shared/Scroll";
 import resume from "../../assets/resume.pdf";
 import ScrollReveal from "scrollreveal";
-import { SiCodewars, SiLeetcode } from "react-icons/si";
-import { FaGithub } from "react-icons/fa";
-import { FaLinkedin } from "react-icons/fa6";
+import { SiLeetcode } from "react-icons/si";
+import { FaGithub, FaLinkedinIn } from "react-icons/fa";
 import avatar from "../../assets/images/avatar.png";
 
 const Hero = () => {
@@ -12,24 +11,19 @@ const Hero = () => {
 
   const socials = [
     {
-      id: 2,
+      id: 0,
       icon: <FaGithub />,
       href: "https://github.com/Jalal-Amourgha",
+    },
+    {
+      id: 1,
+      icon: <FaLinkedinIn />,
+      href: "https://www.linkedin.com/in/jalal-amourgha/",
     },
     {
       id: 2,
       icon: <SiLeetcode />,
       href: "https://leetcode.com/u/Jalal_Amr/",
-    },
-    {
-      id: 2,
-      icon: <SiCodewars />,
-      href: "https://www.codewars.com/users/Jalal_Amr",
-    },
-    {
-      id: 3,
-      icon: <FaLinkedin />,
-      href: "https://www.linkedin.com/in/jalal-amourgha/",
     },
   ];
 
@@ -76,6 +70,7 @@ const Hero = () => {
               {socials.map((social) => (
                 <a
                   className=" text-white text-[40px] hover:text-primary"
+                  target="_blank"
                   href={social.href}
                   key={social.id}
                 >

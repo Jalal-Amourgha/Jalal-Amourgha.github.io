@@ -8,12 +8,11 @@ import {
   FaBootstrap,
   FaPython,
   FaSass,
-  FaGitAlt,
 } from "react-icons/fa6";
-import { SiElasticcloud } from "react-icons/si";
+import { SiC, SiSqlite, SiDjango, SiFlask } from "react-icons/si";
 import { IoLogoFirebase } from "react-icons/io5";
 import { RiJavascriptFill, RiTailwindCssFill } from "react-icons/ri";
-import { BiLogoTypescript } from "react-icons/bi";
+import { BiLogoTypescript, BiLogoPostgresql } from "react-icons/bi";
 import {
   SiNextdotjs,
   SiMongodb,
@@ -25,24 +24,28 @@ import { GrMysql } from "react-icons/gr";
 import SkillCard from "../cards/SkillCard";
 
 const skillsIcons = [
-  { icon: <SiElasticcloud />, alt: "C" },
+  { icon: <SiC />, alt: "C" },
+  { icon: <FaPython />, alt: "Python" },
   { icon: <RiJavascriptFill />, alt: "Javascript" },
   { icon: <BiLogoTypescript />, alt: "Typescript" },
   { icon: <SiPhp />, alt: "php" },
-  { icon: <FaPython />, alt: "Python" },
+
   { icon: <FaHtml5 />, alt: "HTML" },
   { icon: <FaCss3Alt />, alt: "CSS" },
   { icon: <SiNextdotjs />, alt: "Next js" },
   { icon: <FaReact />, alt: "React" },
   { icon: <RiTailwindCssFill />, alt: "Tailwind CSS" },
+  { icon: <SiFlask />, alt: "Flask" },
+  { icon: <SiDjango />, alt: "django" },
   { icon: <FaBootstrap />, alt: "Bootstrap" },
   { icon: <FaSass />, alt: "sass" },
-  { icon: <SiMongodb />, alt: "MongoDB" },
-  { icon: <GrMysql />, alt: "mySQL" },
-  { icon: <IoLogoFirebase />, alt: "firebase" },
   { icon: <SiJquery />, alt: "jQuery" },
   { icon: <SiJest />, alt: "Jest js" },
-  { icon: <FaGitAlt />, alt: "git" },
+  { icon: <SiMongodb />, alt: "MongoDB" },
+  { icon: <GrMysql />, alt: "mySQL" },
+  { icon: <SiSqlite />, alt: "sqlite" },
+  { icon: <BiLogoPostgresql />, alt: "postsql" },
+  { icon: <IoLogoFirebase />, alt: "firebase" },
 ];
 
 const Skills = () => {

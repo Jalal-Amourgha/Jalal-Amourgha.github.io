@@ -23,7 +23,7 @@
   background-color: #888888;
 }
 body {
-  @apply bg-bg-color  selection:bg-primary selection:text-white overflow-x-hidden;
+  @apply bg-bg-color font-roboto selection:bg-primary selection:text-white overflow-x-hidden;
 }
 
 h1,
@@ -64,7 +64,7 @@ textarea {
 .gradient-text {
   background: linear-gradient(
     90deg,
-    rgb(5, 87, 155) 0%,
+    rgb(8, 105, 184) 0%,
     rgba(20, 214, 234, 1) 100%
   );
   -webkit-background-clip: text;
