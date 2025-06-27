@@ -58,11 +58,11 @@ const Hero = () => {
       >
         <div className="flex flex-col justify-center items-center order-2 md:order-1 hero-info">
           <div className="text-center">
-            <h1 className="text-[50px] gradient-text font-bold leading-[120%] mb-5 rubik">
+            <h1 className="text-[50px] text-primary font-bold leading-[120%] mb-5 rubik">
               Jalal Amourgha
             </h1>
 
-            <h2 className="font-semibold text-lg md:text-2xl underline decoration-2 underline-offset-8 decoration-primary italic">
+            <h2 className="font-semibold text-lg md:text-xl italic">
               Junior Software Developer
             </h2>
 
@@ -79,7 +79,7 @@ const Hero = () => {
               ))}
             </div>
 
-            <p className="text-white text-xl mt-5 mb-10">
+            <p className="text-white text-lg mt-5 mb-10">
               I'm deeply passionate about <br /> web development and developing
               <br />
               modern Next js web Apps.
@@ -88,7 +88,7 @@ const Hero = () => {
             <a
               href={resume}
               target="_blank"
-              className={`bg-white text-bg-color text-2xl font-bold py-3 px-6 w-fit mx-auto rounded-3xl animate__animated ${
+              className={`bg-white text-bg-color text-xl font-bold py-3 px-6 w-fit mx-auto rounded-3xl animate__animated ${
                 hovered ? "animate__pulse" : ""
               } hover:bg-primary hover:text-white duration-300`}
               onMouseEnter={() => setHovered(true)}

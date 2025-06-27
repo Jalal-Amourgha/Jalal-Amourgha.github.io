@@ -118,16 +118,6 @@ export const projects = [
   },
 
   {
-    id: 2,
-    name: "Petful",
-    img: project2,
-    description:
-      "Petful pet care platform where users can browse pet products, access health tips, book grooming services, and connect with local pet communities. Featuring easy navigation and trusted resources for all your pet's needs",
-    git_link: "",
-    web_link: "https://petful-sand.vercel.app/",
-    technologies: [tech9, tech3, tech2, tech4],
-  },
-  {
     id: 6,
     name: "E-Tech",
     img: project6,
@@ -136,16 +126,6 @@ export const projects = [
     git_link: "https://github.com/Jalal-Amourgha/E-Tech",
     web_link: "https://e-tech-chi.vercel.app/",
     technologies: [tech1, tech2, tech3, tech4, tech8],
-  },
-  {
-    id: 3,
-    name: "Animox",
-    img: project3,
-    description:
-      "Animox is a website built using Next.js. This platform allows users to search for their favorite anime, manga ... . Filter by diffrent methods, and add their reviews, watchlists, and ratings.",
-    git_link: "https://github.com/Jalal-Amourgha/Animox",
-    web_link: "https://animox-beta.vercel.app/",
-    technologies: [tech1, tech2, tech3, tech4, tech6, tech7, , tech8],
   },
 
   {
@@ -159,6 +139,16 @@ export const projects = [
     technologies: [tech1, tech2, tech3, tech4, tech6, tech8],
   },
   {
+    id: 3,
+    name: "Animox",
+    img: project3,
+    description:
+      "Animox is a website built using Next.js. This platform allows users to search for their favorite anime, manga ... . Filter by diffrent methods, and add their reviews, watchlists, and ratings.",
+    git_link: "https://github.com/Jalal-Amourgha/Animox",
+    web_link: "https://animox-beta.vercel.app/",
+    technologies: [tech1, tech2, tech3, tech4, tech6, tech7, , tech8],
+  },
+  {
     id: 4,
     name: "Brainwave",
     img: project4,
@@ -167,5 +157,15 @@ export const projects = [
     git_link: "https://github.com/Jalal-Amourgha/Brainwave",
     web_link: "https://jalal-amourgha.github.io/Brainwave/",
     technologies: [tech9, tech3, tech4, tech5],
+  },
+  {
+    id: 2,
+    name: "Petful",
+    img: project2,
+    description:
+      "Petful pet care platform where users can browse pet products, access health tips, book grooming services, and connect with local pet communities. Featuring easy navigation and trusted resources for all your pet's needs",
+    git_link: "",
+    web_link: "https://petful-sand.vercel.app/",
+    technologies: [tech9, tech3, tech2, tech4],
   },
 ];

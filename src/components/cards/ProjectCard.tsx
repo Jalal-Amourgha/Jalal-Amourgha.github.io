@@ -36,13 +36,13 @@ const ProjectCard = ({ project, index }: { project: any; index: any }) => {
           <div>
             <a
               href={project.web_link}
-              className="text-xl md:text-3xl font-bold capitalize text-white hover:text-primary line-clamp-1 mb-3 w-fit duration-200 project__title"
+              className="text-xl md:text-2xl font-bold capitalize text-white hover:text-primary line-clamp-1 mb-3 w-fit duration-200 project__title"
               target="_blank"
             >
               {project.name}
             </a>
 
-            <p className="text-sm md:text-base  text-justify">
+            <p className="text-sm md:text-base text-justify">
               {project.description}
             </p>
           </div>

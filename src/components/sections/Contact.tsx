@@ -107,7 +107,7 @@ const Contact = () => {
           ></textarea>
           <button
             type="submit"
-            className="bg-white text-bg-color text-2xl font-bold py-3 px-6 w-fit mx-auto mt-10 rounded-3xl hover:bg-primary hover:text-white  duration-300"
+            className="bg-white text-bg-color text-xl font-bold py-3 px-6 w-fit mx-auto mt-10 rounded-3xl hover:bg-primary hover:text-white  duration-300"
             onClick={() => setSubmitted(!submitted)}
           >
             Submit
