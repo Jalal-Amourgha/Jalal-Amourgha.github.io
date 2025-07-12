@@ -2,9 +2,9 @@ import { useEffect, useState } from "react";
 import Scroll from "../shared/Scroll";
 import resume from "../../assets/resume.pdf";
 import ScrollReveal from "scrollreveal";
-import { SiLeetcode } from "react-icons/si";
 import { FaGithub, FaLinkedinIn } from "react-icons/fa";
 import avatar from "../../assets/images/avatar.png";
+import { FaCode } from "react-icons/fa6";
 
 const Hero = () => {
   const [hovered, setHovered] = useState(false);
@@ -22,8 +22,8 @@ const Hero = () => {
     },
     {
       id: 2,
-      icon: <SiLeetcode />,
-      href: "https://leetcode.com/u/Jalal_Amr/",
+      icon: <FaCode />,
+      href: "https://www.codewars.com/users/Jalal_Amr",
     },
   ];
 
@@ -63,7 +63,7 @@ const Hero = () => {
             </h1>
 
             <h2 className="font-semibold text-lg md:text-xl italic">
-              Junior Software Developer
+              IT Student
             </h2>
 
             <div className="flex items-center justify-center gap-10 mt-10">
