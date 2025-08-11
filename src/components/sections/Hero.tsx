@@ -3,8 +3,8 @@ import Scroll from "../shared/Scroll";
 import resume from "../../assets/resume.pdf";
 import ScrollReveal from "scrollreveal";
 import { FaGithub, FaLinkedinIn } from "react-icons/fa";
+import { SiLeetcode } from "react-icons/si";
 import avatar from "../../assets/images/avatar.png";
-import { FaCode } from "react-icons/fa6";
 
 const Hero = () => {
   const [hovered, setHovered] = useState(false);
@@ -22,8 +22,8 @@ const Hero = () => {
     },
     {
       id: 2,
-      icon: <FaCode />,
-      href: "https://www.codewars.com/users/Jalal_Amr",
+      icon: <SiLeetcode />,
+      href: "https://leetcode.com/u/Mr29/",
     },
   ];
 
