@@ -23,7 +23,7 @@ const Hero = () => {
     {
       id: 2,
       icon: <SiLeetcode />,
-      href: "https://leetcode.com/u/Mr29/",
+      href: "https://leetcode.com/u/Jalal_Amr/",
     },
   ];
 
@@ -63,7 +63,7 @@ const Hero = () => {
             </h1>
 
             <h2 className="font-semibold text-lg md:text-xl italic">
-              IT Student
+              1337 Student
             </h2>
 
             <div className="flex items-center justify-center gap-10 mt-10">
